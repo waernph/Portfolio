@@ -1,0 +1,30 @@
+body {
+    height: 100%;
+    background-color: #1B3C53;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    font-family: monospace;
+
+}
+
+header h1{
+    font-family: "Orbitron";
+    font-size: 50px;
+    font-weight: 700;
+    color: #D2C1B6;
+    margin-left: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family:monospace;
+    font-weight: 300;
+    font-optical-sizing: 20px;
+    font-size:large;
+    color: #D2C1B6;
+}

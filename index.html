@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1>WRN</h1>
+    </header>
     <main></main>
-    <footer>&copy; Philip Waern <span id="yearNow"></span></footer> 
+    <footer>
+        <p>&copy; Philip Waern <span id="yearNow"></span></p>
+    </footer> 
 
-    <!-- Testa att få nuvarande år med js -->
+    <!-- Get current year, should be moved to js-folder? -->
     <script>
         const year = new Date().getFullYear();
         let yearString = year.toString();
         document.getElementById("yearNow").innerText = yearString;
     </script>
+    <!-- Get current year -->
 </body>
 </html>
