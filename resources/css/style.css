@@ -1,13 +1,18 @@
 body {
     height:fit-content;
     background-color: #1B3C53;
+    width: 80%;
+}
+
+::selection {
+    background-color: #78B9B5;
+    color: #1B3C53;
 }
 
 header{
     display: flex;
     justify-content: start;
-    font-family: monospace;
-
+    margin: 3%;
 }
 
 header h1{
@@ -47,11 +52,22 @@ a:active{
 
 }
 
-
 main h2 {
     font-family: "Orbitron";
     color: #D2C1B6;
-    margin-left: 10px;
+    margin-left: 3%;
+}
+main p{
+    font-family: "Orbitron";
+    color: #D2C1B6;
+    margin-left: 3%;
+    width: 70%;
+}
+
+.logos img{
+    height: 60px;
+    padding: 20px;
+
 }
 
 footer{
