@@ -1,5 +1,5 @@
 body {
-    height: 100%;
+    height:fit-content;
     background-color: #1B3C53;
 }
 
@@ -14,6 +14,42 @@ header h1{
     font-family: "Orbitron";
     font-size: 50px;
     font-weight: 700;
+    color: #D2C1B6;
+    margin-left: 10px;
+}
+
+header nav ul *{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+a:link{
+    font-family: "Orbitron";
+    font-size: 20;
+    filter: blur(1px);
+    color: #D2C1B6;
+}
+a:visited {
+    font-family: "Orbitron";
+    font-size: 20;
+    color: #D2C1B6;
+}
+a:hover{
+    color: #78B9B5;
+    filter: blur(0);
+    
+}
+a:active{
+
+}
+
+
+main h2 {
+    font-family: "Orbitron";
     color: #D2C1B6;
     margin-left: 10px;
 }
