@@ -60,6 +60,11 @@ main h2 {
     color: #D2C1B6;
     margin-left: 3%;
 }
+video{
+    display:flex;
+    width: 200px;
+    padding-left: 3%;
+}
 main p{
     font-family: "Orbitron";
     color: #D2C1B6;
