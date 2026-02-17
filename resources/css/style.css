@@ -6,7 +6,6 @@
 body {
     height:fit-content;
     background-color: #1B3C53;
-    
 }
 
 ::selection {
@@ -29,17 +28,13 @@ header{
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 25px;
 }
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
+
 .slider {
     position: absolute;
-    cursor: pointer;
+    /* cursor: pointer; */
     top: 0;
     left: 0;
     bottom: 0;
@@ -50,21 +45,21 @@ header{
 .slider::before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
-    bottom: 4px;
-    background-color: #D2C1B6;
+    bottom: 2.5px;
+    background-color: #1B3C53;
     transition: .4s;
 }
 input:checked + .slider{
     background-color: #78B9B5;
 }
 input:focus + .slider {
-    box-shadow: 0 0 1px white;
+    box-shadow: 0 0 1px #1B3C53;
 }
 input:checked + .slider::before {
-    transform: translateX(26px);
+    transform: translateX(22px);
 }
 .slider.round {
     border-radius: 34px;
@@ -72,7 +67,11 @@ input:checked + .slider::before {
 .slider.round::before{
     border-radius: 50%;
 }
-
+.slider-label{
+    font-family: "Orbitron";
+    font-size: small;
+    color: #D2C1B6;
+}
 .blur{
     height: 50%;
     backdrop-filter: blur(16px) brightness(0.8);
@@ -85,28 +84,24 @@ header nav ul{
 }
 header nav ul li{
     margin-right: 5%;
-
 }
 
 
-a:link{
+a:link, a:visited{
     font-family: "Orbitron";
     font-size: 20;
     color: #D2C1B6;
+    text-decoration: none;
 }
-a:visited {
-    font-family: "Orbitron";
-    font-size: 20;
-    color: #D2C1B6;
-}
+
 a:hover{
     color: #78B9B5;
     filter: blur(0);
-    
+    text-decoration: underline;
 }
 a:active{
     font-family: "Orbitron";
-    font-size: 20;
+    font-size: 20; 
 }
 
 .hero{
