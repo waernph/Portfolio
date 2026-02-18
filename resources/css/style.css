@@ -1,6 +1,9 @@
 :root{
+    --header-padding-top: 20px;
+    --header-padding-bottom: 10px;
     --main-margin-top: 3%;
     --main-margin-bottom: 3%;
+    --padding-left: 30px;
 }
 
 
@@ -20,9 +23,9 @@ header{
     flex-direction: column;
     justify-content: start;
     position: sticky;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    padding-left: 3%;
+    padding-top: var(--header-padding-top);
+    padding-bottom: var(--header-padding-bottom);
+    padding-left: var(--padding-left);
     top: 0;
 }
 .blur{
@@ -65,7 +68,7 @@ a:active{
     height: 30vh;
 }
 main{
-    margin-left: 3%;
+    padding-left: var(--padding-left);
 }
 
 main h2 {
@@ -87,15 +90,21 @@ main h3 {
 video{
     display:flex;
     width: 200px;
-    padding: 3% 0;
-
 }
-
+p{
+    line-height: 1.5;
+    line-break:normal;
+    letter-spacing: 1.2px;
+}
 main p{
     font-family: "Orbitron";
     font-size: smaller;
     color: #D2C1B6;
-    width: 70vw;
+    width: 5px;
+    height: 100%;
+    border-left: 3px solid #78B9B5;
+    width: 50vw;
+    padding-left: 10px;
     margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
 }
