@@ -32,6 +32,7 @@ header{
     height: 50%;
     backdrop-filter: blur(16px) brightness(1.2);
 }
+
 header nav ul{
 
     display: flex;

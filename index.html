@@ -1,114 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/resources/css/reset.css" />
-    <link rel="stylesheet" href="resources/css/style-light.css" />
-    <title>WRN Portfolio</title>
-  </head>
-  <body>
-    <header class="header blur">
-      <!-- navbar -->
-      <nav>
-        <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#references">References</a></li>
-          <li><i class="fa-regular fa-lightbulb"></i></li>
-          <!-- fa-solid för solid lampa -->
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <!-- HERO -->
-      </section>
-      <section id="about-me">
-        <h2>About me</h2>
-        <video autoplay loop>
-          <source src="/resources/media/motion/Profilepic.webm" />
-        </video>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam
-          consequatur quo qui mollitia ad quas, officia neque porro nam minima
-          ipsa hic ipsum totam beatae exercitationem necessitatibus saepe
-          consequuntur odio sunt dolores veritatis. Numquam eligendi beatae
-          temporibus quo neque libero ad iste! Velit labore est saepe? Incidunt,
-          recusandae alias.
-        </p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <!-- icons -->
-        <ul class="logos">
-          <li>
-            <img
-              src="/resources/media/logos/C_Sharp_Logo_2023.svg"
-              alt="logo of C#"
-            />
-          </li>
-          <li>
-            <img
-              src="/resources/media/logos/HTML5_logo_and_wordmark_white.svg"
-              alt="Logo of HTML5"
-            />
-          </li>
-          <li>
-            <img
-              src="/resources/media/logos/CSS3_logo_and_wordmark_white.svg"
-              alt="Logo of CSS3"
-            />
-          </li>
-          <li>
-            <img
-              src="/resources/media/logos/Unofficial_JavaScript_logo_2.svg"
-              alt="Unofficial logo of JavaScript"
-            />
-          </li>
-          <li>
-            <img
-              src="/resources/media/logos/GitHub/GitHub_Invertocat_White.svg"
-              alt="Logo of GitHub"
-            />
-          </li>
-        </ul>
-      </section>
-      <section id="portfolio">
-        <h2>Cases</h2>
-      </section>
-      <section id="references">
-        <h2>References</h2>
-      </section>
-      <section id="contact-form">
-        <h2>Contect form</h2>
-      </section>
-    </main>
-    <footer>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/resources/css/reset.css" />
+  <link rel="stylesheet" href="resources/css/style-dark.css" />
+  <title>WRN Portfolio</title>
+</head>
+
+<body>
+  <header class="header blur">
+    <!-- navbar -->
+    <nav>
+      <ul class="navbar-ul">
+        <li class="logo"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></li>
+        <li><a class href="#skills">Skills</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#references">References</a></li>
+        <li><i class="fa-regular fa-lightbulb"></i></li>
+        <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button class="download-cv-button">Download
+              CV</button></a></li>
+        <li><button class="contact-me-button" id="button-open-modal">Contact me</button></li>
+        <!-- fa-solid för solid lampa -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- HERO -->
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- icons -->
+      <ul class="logos">
+        <li>
+          <img src="/resources/media/logos/C_Sharp_Logo_2023.svg" alt="logo of C#" />
+        </li>
+        <li>
+          <img src="/resources/media/logos/HTML5_logo_and_wordmark_white.svg" alt="Logo of HTML5" />
+        </li>
+        <li>
+          <img src="/resources/media/logos/CSS3_logo_and_wordmark_white.svg" alt="Logo of CSS3" />
+        </li>
+        <li>
+          <img src="/resources/media/logos/Unofficial_JavaScript_logo_2.svg" alt="Unofficial logo of JavaScript" />
+        </li>
+        <li>
+          <img src="/resources/media/logos/GitHub/GitHub_Invertocat_White.svg" alt="Logo of GitHub" />
+        </li>
+      </ul>
+    </section>
+
+    <section id="about-me">
+      <h2>About me</h2>
+      <video autoplay loop>
+        <source src="/resources/media/motion/Profilepic.webm" />
+      </video>
       <p>
-        &copy; Philip Waern <span id="yearNow"></span>
-        <a href="https://github.com/waernph" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/philip-w%C3%A6rn/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam
+        consequatur quo qui mollitia ad quas, officia neque porro nam minima
+        ipsa hic ipsum totam beatae exercitationem necessitatibus saepe
+        consequuntur odio sunt dolores veritatis. Numquam eligendi beatae
+        temporibus quo neque libero ad iste! Velit labore est saepe? Incidunt,
+        recusandae alias.
       </p>
-    </footer>
-    <script src="/resources/js/scripts.js"></script>
-  </body>
+    </section>
+
+    <section id="portfolio">
+      <h2>Cases</h2>
+    </section>
+    <section id="references">
+      <h2>References</h2>
+    </section>
+    <section id="contact-form">
+      <h2>Contect form</h2>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; Philip Waern <span id="yearNow"></span>
+      <a href="https://github.com/waernph" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/philip-w%C3%A6rn/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </p>
+  </footer>
+  <script src="/resources/js/scripts.js"></script>
+</body>
+
 </html>
