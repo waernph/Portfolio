@@ -1,11 +1,10 @@
-function swapDarkLightStyle(styleDark, styleLight){
-    document.getElementById(styleDark).setAttribute('href',styleDark);
-    document.getElementById(styleLight).setAttribute('href', styleLight);
-}
+var contactModal = document.getElementById("contact-modal");
+var openButton = document.getElementById("button-open-modal");
+var closeButton = document.getElementsByClassName("button-close-modal");
 
-function yearNow(){
+
+function year(){
     const year = new Date().getFullYear();
-    let yearString = year.toString();
-    document.getElementById("yearNow").innerText = yearString;
-    return yearString;
+    document.getElementById("yearNow").innerText = year;
 }
+year();

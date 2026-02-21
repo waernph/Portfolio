@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root{
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
@@ -21,28 +24,63 @@ header{
     display: flex;
     height: 80px;
     flex-direction: column;
-    justify-content: start;
     position: sticky;
     padding-top: var(--header-padding-top);
     padding-bottom: var(--header-padding-bottom);
     padding-left: var(--padding-left);
     top: 0;
 }
+.logo{
+    width: 30px;
+}
+
 .blur{
     height: 50%;
     backdrop-filter: blur(16px) brightness(0.8);
 }
-header nav ul{
-
+.download-cv-button{
     display: flex;
+    font-family: "Orbitron";
+    color: #1B3C53;
+    padding: 4px 8px;
+    background-color: #D2C1B6;
+    border: #D2C1B6 2px solid;
+    border-radius: 5px;
+}
+.contact-me-button{
+    font-family: "Orbitron";
+    color: #78B9B5;
+    padding: 4px 8px;
+    background-color: #1B3C53;
+    border: #78B9B5 2px solid;
+    border-radius: 5px;
+
+}
+.contact-me-button:hover{
+    background-color: #78B9B5;
+    color: #1B3C53;
+    transition: all 0.3s ease-in-out;
+}
+.download-cv-button:hover {
+    background-color: #78B9B5;
+    border-color: #78B9B5;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-ul{
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
     list-style: none;
 }
-header nav ul li{
-    margin-right: 5%;
+.navbar-ul li{
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    align-items: center;
 }
+
 header nav ul li i{
-    margin-left: 90%;
+    
     color: #D2C1B6;
 }
 
@@ -58,6 +96,7 @@ a:hover{
     color: #78B9B5;
     filter: blur(0);
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
 }
 a:active{
     font-family: "Orbitron";
@@ -116,7 +155,7 @@ main p{
 }
 
 .logos li img{
-    height: 60px;
+    height: 100px;
     padding: 20px;
     list-style: none;
 }
