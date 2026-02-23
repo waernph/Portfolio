@@ -7,12 +7,13 @@
     --main-margin-top: 3%;
     --main-margin-bottom: 3%;
     --padding-left: 30px;
+     scroll-behavior: smooth;
 }
 
 
 body {
-    height:fit-content;
     background-color: #1B3C53;
+    scroll-behavior:smooth;
 }
 
 ::selection {
@@ -21,9 +22,7 @@ body {
 }
 
 header{
-    display: flex;
     height: 80px;
-    flex-direction: column;
     position: sticky;
     padding-top: var(--header-padding-top);
     padding-bottom: var(--header-padding-bottom);
@@ -38,9 +37,26 @@ header{
     height: 50%;
     backdrop-filter: blur(16px) brightness(0.8);
 }
-.download-cv-button{
+
+.navbar-ul{
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.navbar-ul li{
+    margin-top: 10px;
+    margin-right: 25px;
+    align-content: center;
+}
+
+header nav ul li i{
+    color: #D2C1B6;
+}
+
+.download-cv-button{
     font-family: "Orbitron";
+    width: 130px;
     color: #1B3C53;
     padding: 4px 8px;
     background-color: #D2C1B6;
@@ -66,24 +82,9 @@ header{
     border-color: #78B9B5;
     transition: all 0.3s ease-in-out;
 }
-.navbar-ul{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    list-style: none;
+.nav-button{
+    width: 130px;
 }
-.navbar-ul li{
-    display: flex;
-    justify-content: center;
-    margin-right: 15px;
-    align-items: center;
-}
-
-header nav ul li i{
-    
-    color: #D2C1B6;
-}
-
 
 a:link, a:visited{
     font-family: "Orbitron";
@@ -151,7 +152,7 @@ main p{
 .logos {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .logos li img{
@@ -185,4 +186,19 @@ footer p::selection{
 footer span::selection{
     background-color: #1B3C53;
     color: #D2C1B6;
+}
+
+#about-me{
+    scroll-margin-top: 100px;
+}
+
+
+#portfolio{
+    scroll-margin-top: 100px;
+}
+#skills{
+    scroll-margin-top: 100px;
+}
+#references{
+    scroll-margin-top: 100px;
 }
