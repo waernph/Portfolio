@@ -1,19 +1,21 @@
 * {
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
-    --main-margin-top: 3%;
-    --main-margin-bottom: 3%;
+    --main-margin-top: 25px;
+    --main-margin-bottom: 25px;
+    --case-margin-right: 20px;
     --padding-left: 30px;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
 body {
     background-color: #1B3C53;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -21,40 +23,45 @@ body {
     color: #1B3C53;
 }
 
-header{
+header {
     height: 80px;
     position: sticky;
     padding-top: var(--header-padding-top);
     padding-bottom: var(--header-padding-bottom);
     padding-left: var(--padding-left);
+    z-index: 100;
     top: 0;
 }
-.logo{
+
+.logo {
     width: 30px;
 }
 
-.blur{
+.blur {
     height: 50%;
     backdrop-filter: blur(16px) brightness(0.8);
 }
 
-.navbar-ul{
+.navbar-ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     list-style: none;
 }
-.navbar-ul li{
+
+.navbar-ul li {
     margin-top: 10px;
     margin-right: 25px;
     align-content: center;
 }
 
-header nav ul li i{
+.nav-button {}
+
+header nav ul li i {
     color: #D2C1B6;
 }
 
-.download-cv-button{
+.download-cv-button {
     font-family: "Orbitron";
     width: 130px;
     color: #1B3C53;
@@ -63,7 +70,8 @@ header nav ul li i{
     border: #D2C1B6 2px solid;
     border-radius: 5px;
 }
-.contact-me-button{
+
+.contact-me-button {
     font-family: "Orbitron";
     color: #78B9B5;
     padding: 4px 8px;
@@ -72,42 +80,55 @@ header nav ul li i{
     border-radius: 5px;
 
 }
-.contact-me-button:hover{
+
+.contact-me-button:hover {
     background-color: #78B9B5;
     color: #1B3C53;
     transition: all 0.3s ease-in-out;
 }
+
 .download-cv-button:hover {
     background-color: #78B9B5;
     border-color: #78B9B5;
     transition: all 0.3s ease-in-out;
 }
-.nav-button{
+
+.nav-button {
     width: 130px;
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
     font-family: "Orbitron";
     font-size: 20;
     color: #D2C1B6;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #78B9B5;
     filter: blur(0);
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
-a:active{
+
+a:active {
     font-family: "Orbitron";
-    font-size: 20; 
+    font-size: 20;
 }
 
-.hero{
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero img {
     height: 30vh;
 }
-main{
+
+main {
     padding-left: var(--padding-left);
 }
 
@@ -123,20 +144,21 @@ main h3 {
     font-family: "Orbitron";
     font-size: large;
     color: #D2C1B6;
-    margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
+    margin-top: 15px;
 }
 
-video{
-    display:flex;
+video {
     width: 200px;
 }
-p{
+
+p {
     line-height: 1.5;
-    line-break:normal;
+    line-break: normal;
     letter-spacing: 1.2px;
 }
-main p{
+
+main p {
     font-family: "Orbitron";
     font-size: smaller;
     color: #D2C1B6;
@@ -155,50 +177,82 @@ main p{
     flex-wrap: wrap;
 }
 
-.logos li img{
+.logos li img {
     height: 100px;
     padding: 20px;
     list-style: none;
 }
 
-footer{
+.case-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.case-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--case-margin-right);
+    width: 230px;
+}
+
+.case-image {
+    width: 190px;
+}
+
+.case-card p {
+    width: 190px;
+}
+
+footer {
     display: flex;
     align-items: end;
     justify-content: center;
-    font-family:monospace;
+    font-family: monospace;
     font-weight: 300;
-    font-size:x-large;
+    font-size: x-large;
     color: #1B3C53;
     padding-top: 1%;
     padding-bottom: 2%;
     background: #D2C1B6;
 }
-footer i{
+
+footer i {
     color: #1B3C53;
 }
-footer i:hover{
+
+footer i:hover {
     color: #78B9B5;
 }
-footer p::selection{
+
+footer p::selection {
     background-color: #1B3C53;
     color: #D2C1B6;
 }
-footer span::selection{
+
+footer span::selection {
     background-color: #1B3C53;
     color: #D2C1B6;
 }
 
-#about-me{
+#about-me {
     scroll-margin-top: 100px;
 }
 
 
-#portfolio{
+#portfolio {
     scroll-margin-top: 100px;
 }
-#skills{
+
+#skills {
     scroll-margin-top: 100px;
 }
-#references{
+
+#references {
     scroll-margin-top: 100px;
 }
