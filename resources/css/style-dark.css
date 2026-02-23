@@ -29,6 +29,7 @@ header {
     padding-top: var(--header-padding-top);
     padding-bottom: var(--header-padding-bottom);
     padding-left: var(--padding-left);
+    z-index: 100;
     top: 0;
 }
 
@@ -53,6 +54,8 @@ header {
     margin-right: 25px;
     align-content: center;
 }
+
+.nav-button {}
 
 header nav ul li i {
     color: #D2C1B6;
@@ -115,6 +118,13 @@ a:active {
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero img {
     height: 30vh;
 }
 
@@ -134,8 +144,8 @@ main h3 {
     font-family: "Orbitron";
     font-size: large;
     color: #D2C1B6;
-    margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
+    margin-top: 15px;
 }
 
 video {
@@ -181,8 +191,6 @@ main p {
 .case-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content:start;
-    margin-right: 20px;
     list-style: none;
 }
 
@@ -192,11 +200,12 @@ main p {
     margin-right: var(--case-margin-right);
     width: 230px;
 }
+
 .case-image {
     width: 190px;
 }
 
-.case-card p{
+.case-card p {
     width: 190px;
 }
 
