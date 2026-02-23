@@ -156,7 +156,7 @@ a:active {
     border-radius: 50%;
     filter: blur(130px);
     animation: gradient-left infinite 5s;
-    z-index: 30;
+    z-index: 10;
 }
  .hero-background-element-right{
     bottom: 0px;
@@ -168,7 +168,7 @@ a:active {
     border-radius: 50%;
     filter: blur(130px);
     animation: gradient-right infinite 15s;
-    z-index: 30;
+    z-index: 10;
 } 
 @keyframes gradient-left{
     0%{
@@ -254,6 +254,7 @@ main p {
     margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
 }
+
 
 .logos {
     list-style: none;
