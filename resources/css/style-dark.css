@@ -275,6 +275,7 @@ main p {
 
 .case-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -283,15 +284,15 @@ main p {
     display: flex;
     flex-direction: column;
     margin-right: var(--case-margin-right);
-    width: 230px;
+    width: 300px;
 }
 
 .case-image {
-    width: 190px;
+    width: 250px;
 }
 
 .case-card p {
-    width: 190px;
+    width: 250px;
 }
 
 footer {
