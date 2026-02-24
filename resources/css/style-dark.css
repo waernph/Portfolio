@@ -121,30 +121,34 @@ a:active {
     justify-content: center;
     align-items: center;
     padding-left: 0px;
-    height: 90vh; 
+    height: 90vh;
     position: relative;
 }
+
 .hero p {
     font-family: "Orbitron";
     color: #D2C1B6;
     padding-top: 25px;
     animation: logo-p 3s;
 }
-@keyframes logo-p{
-    0%{
+
+@keyframes logo-p {
+    0% {
         opacity: 0%;
     }
-    50%{
+
+    50% {
         opacity: 0%;
     }
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
 
 
 
-.hero-background-element-left{
+.hero-background-element-left {
     top: 5px;
     left: 0px;
     background-color: #74ff86;
@@ -156,7 +160,8 @@ a:active {
     animation: gradient-left infinite 5s;
     z-index: 10;
 }
- .hero-background-element-right{
+
+.hero-background-element-right {
     bottom: 0px;
     right: 0px;
     background-color: #b978ac;
@@ -167,32 +172,40 @@ a:active {
     filter: blur(130px);
     animation: gradient-right infinite 15s;
     z-index: 10;
-} 
-@keyframes gradient-left{
-    0%{
+}
+
+@keyframes gradient-left {
+    0% {
         opacity: 0%;
     }
-    50%{
+
+    50% {
         opacity: 100%;
     }
-    100%{
+
+    100% {
         opacity: 0%;
     }
 }
-@keyframes gradient-right{
-    0%{
+
+@keyframes gradient-right {
+    0% {
         opacity: 60%;
     }
-    25%{
+
+    25% {
         opacity: 20%;
     }
-    50%{
+
+    50% {
         opacity: 100%;
     }
-    75%{
+
+    75% {
         opacity: 20%;
     }
-    100%{
+
+    100% {
         opacity: 60%;
     }
 }
@@ -201,18 +214,20 @@ a:active {
     height: 25vh;
     animation: logo-appear 3s;
 }
-@keyframes logo-appear{
-    0%{
+
+@keyframes logo-appear {
+    0% {
         opacity: 0%;
     }
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
 
 main {
     padding-left: var(--padding-left);
-} 
+}
 
 main h2 {
     font-family: "Orbitron";
@@ -229,10 +244,6 @@ main h3 {
     margin-bottom: var(--main-margin-bottom);
     margin-top: 15px;
 }
-
-/* video {
-    width: 200px;
-} */
 
 p {
     line-height: 1.5;
@@ -255,26 +266,26 @@ main p {
 
 
 .logos {
-
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    margin-left: 10vh;
-    margin-right: 20vh;
+    justify-content: start;
+    padding-top: var(--main-margin-top);
     flex-wrap: wrap;
-    margin-bottom: 15px;
 }
 
 .logos li img {
     height: 100px;
+    margin-right: 100px;
     list-style: none;
 }
 
 .skill-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100px;
     margin-top: 15px;
+    margin-bottom: 30px;
     font-family: "Orbitron";
     font-size: 14px;
     color: #D2C1B6;
@@ -283,21 +294,27 @@ main p {
     line-break: normal;
     letter-spacing: 1.2px;
 }
+
 .skill-list li {
+    width: 100px;
     margin-bottom: 10px;
-        padding-left: 10px;
+    padding-left: 10px;
 }
 
 .content-about-me {
     display: flex;
     flex-wrap: wrap;
 }
+
 .content-about-me video {
     width: 400px;
     margin-right: 25px;
+    z-index: 100;
 }
+
 .content-about-me p {
-    width: 500px;;
+    width: 500px;
+    ;
 }
 
 .case-section {
@@ -307,7 +324,7 @@ main p {
 
 .case-list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     list-style: none;
 }
