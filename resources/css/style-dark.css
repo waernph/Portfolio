@@ -257,15 +257,37 @@ main p {
 
 
 .logos {
+
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 20vh;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .logos li img {
     height: 100px;
-    padding: 20px;
     list-style: none;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-top: 15px;
+    font-family: "Orbitron";
+    font-size: 14px;
+    color: #D2C1B6;
+    list-style: none;
+    border-left: #78B9B5 3px solid;
+    line-break: normal;
+    letter-spacing: 1.2px;
+}
+.skill-list li {
+    margin-bottom: 10px;
+        padding-left: 10px;
 }
 
 .case-section {
@@ -294,6 +316,7 @@ main p {
 .case-card p {
     width: 250px;
 }
+
 
 footer {
     display: flex;
