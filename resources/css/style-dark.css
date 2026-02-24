@@ -6,7 +6,7 @@
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
     --main-margin-top: 25px;
-    --main-margin-bottom: 25px;
+    --main-margin-bottom: 15px;
     --case-margin-right: 20px;
     --padding-left: 30px;
     scroll-behavior: smooth;
@@ -54,8 +54,6 @@ header {
     margin-right: 25px;
     align-content: center;
 }
-
-.nav-button {}
 
 header nav ul li i {
     color: #D2C1B6;
@@ -232,9 +230,9 @@ main h3 {
     margin-top: 15px;
 }
 
-video {
+/* video {
     width: 200px;
-}
+} */
 
 p {
     line-height: 1.5;
@@ -288,6 +286,18 @@ main p {
 .skill-list li {
     margin-bottom: 10px;
         padding-left: 10px;
+}
+
+.content-about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-about-me video {
+    width: 400px;
+    margin-right: 25px;
+}
+.content-about-me p {
+    width: 500px;;
 }
 
 .case-section {
