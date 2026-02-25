@@ -252,12 +252,11 @@ p {
 }
 
 main p {
-    font-family: "Orbitron";
-    font-size: smaller;
+    font-family: "Nunito", sans-serif;
+    font-size: medium;
     color: #D2C1B6;
     width: 5px;
     height: 100%;
-    border-left: 3px solid #78B9B5;
     width: 50vw;
     padding-left: 10px;
     margin-top: var(--main-margin-top);
@@ -286,8 +285,9 @@ main p {
     width: 100px;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-family: "Orbitron";
-    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    /* font-family: "MuseoModerno"; */
+    font-size: small;
     color: #D2C1B6;
     list-style: none;
     border-left: #78B9B5 3px solid;
@@ -303,19 +303,29 @@ main p {
 
 .content-about-me {
     display: flex;
+    align-items: start;
     flex-wrap: wrap;
 }
 
 .content-about-me video {
     width: 400px;
-    margin-right: 25px;
-    z-index: 100;
+    z-index: -100;
+    margin-right: 15px;
 }
 
-.content-about-me p {
-    width: 500px;
-    ;
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Nunito", sans-serif;
+    /* font-family: "MuseoModerno"; */
+    border-left: #78B9B5 3px solid;
+    margin-right: 175px;
 }
+.about-me-text p{
+    margin: 0px;
+}
+
 
 .case-section {
     display: flex;
@@ -342,6 +352,7 @@ main p {
 
 .case-card p {
     width: 250px;
+    border-left: #78B9B5 3px solid;
 }
 
 
