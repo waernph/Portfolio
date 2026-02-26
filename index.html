@@ -17,6 +17,10 @@
     @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
   </style>
   <link rel="stylesheet" href="/resources/css/reset.css" />
+  <link rel="stylesheet" href="/resources/css/header-style.css">
+  <link rel="stylesheet" href="/resources/css/hero-style.css">
+  <link rel="stylesheet" href="/resources/css/main-style.css">
+  <link rel="stylesheet" href="/resources/css/footer-style.css">
   <link rel="stylesheet" href="resources/css/style-dark.css" />
   <title>WRN Portfolio</title>
 </head>
@@ -25,29 +29,29 @@
   <header class="header blur">
     <!-- navbar -->
     <nav class="navbar">
+      <a class="logo" href="#"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></a>
       <ul class="navbar-ul">
-        <li class="logo"><a href="#"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></a></li>
         <li><a class="navbar-button" href="#skills">Skills</a></li>
         <li><a class="navbar-button" href="#about-me">About me</a></li>
         <li><a class="navbar-button" href="#portfolio">Portfolio</a></li>
         <li><a class="navbar-button" href="#references">References</a></li>
-        <ul class="weather-info">
-          <select class="city-list" name="city" id="city">
-            <option value="2711533">Göteborg</option>
-            <option value="2673730">Stockholm</option>
-            <option value="2692969">Malmö</option>
-          </select>
-          <li id="temperature"></li>
-          <li id="weather-condition"></li>
-        </ul>
-        <ul class="buttons-list">
-          <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
-                class="download-cv-button nav-button">Download
-                CV</button></a></li>
-          <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
-        </ul>
+      </ul>
+      <ul class="weather-info">
+        <select class="city-list" name="city" id="city">
+          <option value="2711533">Göteborg</option>
+          <option value="2673730">Stockholm</option>
+          <option value="2692969">Malmö</option>
+        </select>
+        <li id="temperature"></li>
+        <li id="weather-condition"></li>
       </ul>
 
+      <ul class="buttons-list">
+        <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
+              class="download-cv-button nav-button">Download
+              CV</button></a></li>
+        <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
+      </ul>
     </nav>
   </header>
   <section class="hero">
