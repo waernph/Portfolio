@@ -11,42 +11,37 @@ header {
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    width: 100vw;
     margin-left: 2vw;
     margin-right: 2vw;
 }
 
 .navbar-ul {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     list-style: none;
 }
-
 .navbar-ul li {
-
+    margin-left: 30px;
 }
 
 .buttons-list {
     display: flex;
-    justify-content: end;
+    margin-left: auto;
     list-style: none;
+}
+.buttons-list li{
+    margin-right: 30px;
 }
 
 .logo {
     width: 40px;
-
 }
 
 .blur {
-
     backdrop-filter: blur(16px) brightness(0.7);
 }
-
-
-
 
 
 header nav ul li i {
@@ -72,11 +67,14 @@ header nav ul li i {
 }
 .weather-info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-left: 30px;
     list-style: none;
     font-family: "Orbitron";
     color: #D2C1B6;
+}
+.weather-info li {
+    margin-left: 30px;
 }
 
 
