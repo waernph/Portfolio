@@ -29,16 +29,22 @@ function tagLine() {
 
 tagLine();
 
-async function weather() {
+async function weather(cityId = 2711533) {
+    
     const apiKey = "69ec97f7b99ef917a294c46362d91722";
-    let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=2711533&units=metric&appid=${apiKey}`
+    let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`
     const response = await fetch(endpoint)
     const result = await response.json();
     const temperatureC = (Math.round(result.main.temp) + "°C");
     const weather = result.weather[0].main;
     document.getElementById("weather-condition").innerText = weather;
-    document.getElementById("temperature").innerText = temperatureC
-    console.log(temperatureC + "° C");
-    console.log(weather);
+    document.getElementById("temperature").innerText = temperatureC;
 }
 weather();
+
+const cityList = document.getElementById("city");
+
+function updateWeather() {
+   weather(cityList.value)
+}
+cityList.addEventListener("click", updateWeather)
