@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    height: 90vh;
+    position: relative;
+}
+
+.hero p {
+    font-family: "Orbitron";
+    color: #D2C1B6;
+    padding-top: 25px;
+    animation: logo-p 3s;
+}
+
+@keyframes logo-p {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
+.hero-background-element-left {
+    top: 5px;
+    left: 0px;
+    background-color: #74ff86;
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    filter: blur(130px);
+    animation: gradient-left infinite 5s;
+    z-index: 10;
+}
+
+.hero-background-element-right {
+    bottom: 0px;
+    right: 0px;
+    background-color: #b978ac;
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    border-radius: 50%;
+    filter: blur(130px);
+    animation: gradient-right infinite 15s;
+    z-index: 10;
+}
+
+@keyframes gradient-left {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes gradient-right {
+    0% {
+        opacity: 60%;
+    }
+
+    25% {
+        opacity: 20%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 20%;
+    }
+
+    100% {
+        opacity: 60%;
+    }
+}
+
+.hero img {
+    height: 25vh;
+    animation: logo-appear 3s;
+}
+
+@keyframes logo-appear {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

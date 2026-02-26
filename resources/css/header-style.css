@@ -1,0 +1,136 @@
+
+
+header {
+    height: 80px;
+    position: sticky;
+    padding-top: var(--header-padding-top);
+    padding-bottom: 25px;
+    z-index: 100;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navbar-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar-ul li {
+    margin-left: 30px;
+}
+
+.buttons-list {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+.buttons-list li{
+    margin-right: 30px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.blur {
+    backdrop-filter: blur(16px) brightness(0.7);
+}
+
+
+header nav ul li i {
+    color: #D2C1B6;
+}
+.city-list{
+    border: #D2C1B6 2px solid;
+    border-radius: 5px;
+    width: 130px;
+    height: 30px;
+    padding: 3px 8px;
+    background-color: transparent;
+    color: #D2C1B6;
+    font-family: "Orbitron";
+}
+.city-list:hover{
+    background-color: #78B9B5;
+    border-color: #78B9B5;
+    color: #1B3C53;
+}
+.city-list::selection{
+    border: 0px #78B9B5 solid;
+}
+.weather-info {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    list-style: none;
+    font-family: "Orbitron";
+    color: #D2C1B6;
+}
+.weather-info li {
+    margin-left: 30px;
+}
+
+
+.download-cv-button {
+    font-family: "Orbitron";
+    width: 130px;
+    color: #1B3C53;
+    padding: 4px 8px;
+    background-color: #D2C1B6;
+    border: #D2C1B6 2px solid;
+    border-radius: 5px;
+}
+
+.contact-me-button {
+    font-family: "Orbitron";
+    color: #78B9B5;
+    padding: 4px 8px;
+    background-color: #1B3C53;
+    border: #78B9B5 2px solid;
+    border-radius: 5px;
+
+}
+
+.contact-me-button:hover {
+    background-color: #78B9B5;
+    color: #1B3C53;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-cv-button:hover {
+    background-color: #78B9B5;
+    border-color: #78B9B5;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button {
+    width: 130px;
+}
+
+a:link,
+a:visited {
+    font-family: "Orbitron";
+    font-size: 20;
+    color: #D2C1B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #78B9B5;
+    filter: blur(0);
+    border-bottom: #78B9B5 3px solid;
+    transition: color 0.3s ease-in-out;
+}
+
+
+a:active {
+    font-family: "Orbitron";
+    font-size: 20;
+}

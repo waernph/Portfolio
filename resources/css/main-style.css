@@ -1,0 +1,36 @@
+main {
+    padding-left: var(--padding-left);
+}
+
+main h2 {
+    font-family: "Orbitron";
+    font-size: x-large;
+    color: #D2C1B6;
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+}
+
+main h3 {
+    font-family: "Orbitron";
+    font-size: large;
+    color: #D2C1B6;
+    margin-bottom: var(--main-margin-bottom);
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+main p {
+    font-family: "Nunito", sans-serif;
+    font-size: medium;
+    color: #D2C1B6;
+    width: 5px;
+    height: 100%;
+    width: 50vw;
+    padding-left: 10px;
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+}
