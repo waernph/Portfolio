@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio by Philip Waern. Developer student at Jensen YH with a background in video production and photography.">
+  <meta name="description"
+    content="Portfolio by Philip Waern. Developer student at Jensen YH with a background in video production and photography.">
   <link rel="icon" href="/resources/media/logos/danish_ae.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,20 +31,30 @@
         <li><a class="navbar-button" href="#about-me">About me</a></li>
         <li><a class="navbar-button" href="#portfolio">Portfolio</a></li>
         <li><a class="navbar-button" href="#references">References</a></li>
-        <li><i class="fa-regular fa-lightbulb"></i></li>
-        <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
-              class="download-cv-button nav-button">Download
-              CV</button></a></li>
-        <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
-        <!-- fa-solid för solid lampa -->
+        <ul class="weather-info">
+          <select class="city-list" name="city" id="city">
+            <option value="Göteborg">Gothenburg</option>
+            <option value="Stockholm">Stockholm</option>
+            <option value="Malmö">Malmö</option>
+          </select>
+          <li id="temperature"></li>
+          <li id="weather-condition"></li>
+        </ul>
+        <ul class="buttons-list">
+          <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
+                class="download-cv-button nav-button">Download
+                CV</button></a></li>
+          <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
+        </ul>
       </ul>
+
     </nav>
   </header>
   <section class="hero">
     <div class="hero-background-element-left"></div>
     <div class="hero-background-element-right"></div>
     <img src="/resources/media/logos/danish_ae.svg" alt="logo with a danish ä">
-    <p>Backend developer studying at Jensen YH</p>
+    <p id="tag-line"></p>
   </section>
   <main>
     <section id="skills">
