@@ -8,7 +8,7 @@ function year() {
 }
 year();
 
-
+//Change tagline
 function tagLine() {
     const tagLine = document.querySelector("#tag-line");
     let index = 0;
@@ -26,9 +26,10 @@ function tagLine() {
         index++;
     }, 4000);
 }
-
 tagLine();
+//Change tagline
 
+//Fetch weather data with input default set to Göteborg
 async function weather(cityId = 2711533) {
 
     const apiKey = "69ec97f7b99ef917a294c46362d91722";
@@ -41,10 +42,16 @@ async function weather(cityId = 2711533) {
     document.getElementById("temperature").innerText = temperatureC;
 }
 weather();
+//Fetch weather data with input default set to Göteborg
 
+//Get set value to weather() from list
 const cityList = document.getElementById("city");
 
 function updateWeather() {
     weather(cityList.value)
 }
 cityList.addEventListener("click", updateWeather);
+//Get set value to weather() from list
+
+
+
