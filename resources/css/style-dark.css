@@ -1,6 +1,20 @@
 * {
     box-sizing: border-box;
 }
+::-webkit-scrollbar-track {
+    background: #D2C1B6;
+}
+
+::-webkit-scrollbar{
+    width: 10px; 
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1B3C53;
+    border: #D2C1B6 3px solid;   
+    border-radius: 15px;
+}
 
 :root {
     --margin-left: 10%;

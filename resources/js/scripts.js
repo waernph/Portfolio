@@ -10,19 +10,19 @@ year();
 
 
 function tagLine() {
-    const loop = true;
+    const tagLine = document.querySelector("#tag-line");
     let index = 0;
     const tagLineList = [
         "Backend developer studying at Jensen YH",
         "Former video producer and photographer",
         "Creative problem solver",
     ]
-    document.getElementById("tag-line").innerText = tagLineList[index];
+    tagLine.innerText = tagLineList[0];
     setInterval(() => {
         if (index == tagLineList.length) {
             index = 0;
         }
-        document.getElementById("tag-line").innerText = tagLineList[index];
+        tagLine.innerText = tagLineList[index];
         index++;
     }, 4000);
 }
@@ -30,7 +30,7 @@ function tagLine() {
 tagLine();
 
 async function weather(cityId = 2711533) {
-    
+
     const apiKey = "69ec97f7b99ef917a294c46362d91722";
     let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`
     const response = await fetch(endpoint)
@@ -45,6 +45,6 @@ weather();
 const cityList = document.getElementById("city");
 
 function updateWeather() {
-   weather(cityList.value)
+    weather(cityList.value)
 }
-cityList.addEventListener("click", updateWeather)
+cityList.addEventListener("click", updateWeather);
