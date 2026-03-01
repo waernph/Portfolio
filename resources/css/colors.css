@@ -2,5 +2,5 @@
     --bg-color: #1B3C53;
     --highlight: #78B9B5;
     --light-color: #D2C1B6;
-    /* transition: all 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
 }

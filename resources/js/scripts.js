@@ -82,12 +82,29 @@ modalButton.addEventListener("click", function() {
 
 
 const themeSwitch = document.querySelector("#theme-button");
-
+let isDarkTheme = true;
 function lightMode() {
     document.documentElement.style.setProperty("--bg-color", "#D2C1B6");
     document.documentElement.style.setProperty("--light-color", "#1B3C53");
     document.documentElement.style.setProperty("--highlight", "#1B3C53");
 }
+function darkMode() {
+    document.documentElement.style.setProperty("--bg-color", "#1B3C53");
+    document.documentElement.style.setProperty("--light-color", "#D2C1B6");
+    document.documentElement.style.setProperty("--highlight", "#78B9B5");  
+}
 
-themeSwitch.addEventListener("click", lightMode);
+
+themeSwitch.addEventListener("click", function() {
+    if(isDarkTheme) {
+        lightMode();
+        isDarkTheme = false;
+    }
+    else {
+        darkMode();
+        isDarkTheme = true;
+    }
+    console.log(isDarkTheme);
+    
+});
 
