@@ -51,8 +51,8 @@ header {
     font-family: "Orbitron";
     color: var(--bg-color);
     padding: 4px 8px;
-    background-color: var(--txt-color);
-    border: var(--txt-color) 2px solid;
+    background-color: var(--light-color);
+    border: var(--light-color) 2px solid;
     border-radius: 5px;
 }
 
@@ -85,7 +85,7 @@ header {
 .navbar-link:visited {
     font-family: "Orbitron";
     font-size: 20;
-    color: var(--txt-color);
+    color: var(--light-color);
     border-bottom: transparent 3px solid;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -101,3 +101,16 @@ header {
     font-family: "Orbitron";
     font-size: 20;
 } 
+
+.theme-button {
+    background-color: transparent;
+    border: transparent;
+    font-size: larger;
+    color: var(--light-color);
+    margin-left: 15px;
+    padding: 15px;
+}
+.theme-button:hover {
+    cursor: pointer;
+    color: var(--highlight);
+}

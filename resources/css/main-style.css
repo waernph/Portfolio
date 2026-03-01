@@ -10,7 +10,7 @@ main {
 main h2 {
     font-family: "Orbitron";
     font-size: x-large;
-    color: var(--txt-color);
+    color: var(--light-color);
     margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
 }
@@ -18,7 +18,7 @@ main h2 {
 main h3 {
     font-family: "Orbitron";
     font-size: large;
-    color: var(--txt-color);
+    color: var(--light-color);
     margin-bottom: var(--main-margin-bottom);
     margin-top: 15px;
 }
@@ -31,7 +31,7 @@ p {
 main p {
     font-family: "Nunito", sans-serif;
     font-size: medium;
-    color: var(--txt-color);
+    color: var(--light-color);
     width: 5px;
     height: 100%;
     width: 50vw;

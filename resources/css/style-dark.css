@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar-track {
-    background: var(--txt-color);
+    background: var(--light-color);
 }
 
 ::-webkit-scrollbar{
@@ -14,8 +14,7 @@
 
 ::-webkit-scrollbar-thumb{
     background: var(--bg-color);
-    /* background: #1B3C53; */
-    border: var(--txt-color) 3px solid;   
+    border: var(--light-color) 3px solid;   
     border-radius: 15px;
 }
 
@@ -71,7 +70,7 @@ body {
     margin-bottom: 30px;
     font-family: "Nunito", sans-serif;
     font-size: small;
-    color: var(--txt-color);
+    color: var(--light-color);
     list-style: none;
     border-left: var(--highlight) 3px solid;
     letter-spacing: 1.2px;
@@ -147,7 +146,7 @@ footer {
     color: var(--bg-color);
     padding-top: 1%;
     padding-bottom: 2%;
-    background: var(--txt-color);
+    background: var(--light-color);
 }
 
 footer i {
@@ -160,12 +159,12 @@ footer i:hover {
 
 footer p::selection {
     background-color: var(--bg-color);
-    color: var(--txt-color);
+    color: var(--light-color);
 }
 
 footer span::selection {
     background-color: var(--bg-color);
-    color: var(--txt-color);
+    color: var(--light-color);
 }
 
 #about-me {

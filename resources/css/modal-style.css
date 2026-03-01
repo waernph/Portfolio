@@ -11,7 +11,7 @@
     border-radius: 5px;
     top: -300px;
     font-family: "Orbitron", sans-serif;
-    color: var(--txt-color);
+    color: var(--light-color);
     backdrop-filter: blur(10px) brightness(0.8);
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -38,7 +38,7 @@
 .form-content button {
     margin-top: 15px;
     border-radius: 5px;
-    border: var(--txt-color) 0px none;
+    border: var(--light-color) 0px none;
     background-color: var(--highlight);
     font-family: "Orbitron", sans-serif;
     padding: 10px;
@@ -46,7 +46,7 @@
 .close-modal-button {
     background-color: transparent;
     border: transparent;
-    color: var(--txt-color);
+    color: var(--light-color);
 }
 .close-modal-button {
     display: flex;

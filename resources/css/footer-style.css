@@ -9,7 +9,7 @@ footer {
     color: var(--bg-color);
     padding-top: 1%;
     padding-bottom: 2%;
-    background: var(--txt-color);
+    background: var(--light-color);
 }
 
 footer i {
@@ -22,10 +22,10 @@ footer i:hover {
 
 footer p::selection {
     background-color: var(--bg-color);
-    color: var(--txt-color);
+    color: var(--light-color);
 }
 
 footer span::selection {
     background-color: var(--bg-color);
-    color: var(--txt-color);
+    color: var(--light-color);
 }
