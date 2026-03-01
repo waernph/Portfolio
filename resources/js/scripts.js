@@ -52,3 +52,10 @@ function updateWeather() {
 }
 cityList.addEventListener("click", updateWeather);
 //Get set value to weather() from list
+
+const contactForm = document.querySelector("#contact-form");
+function showContactModal() {
+    contactForm.style.display = "flex";
+}
+
+document.querySelector("#button-open-modal").addEventListener("click", showContactModal);
