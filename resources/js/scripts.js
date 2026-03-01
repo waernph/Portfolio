@@ -82,11 +82,12 @@ modalButton.addEventListener("click", function() {
 
 
 const themeSwitch = document.querySelector("#theme-button");
-const bgColor = document.documentElement.style.setProperty("--bg-color", "#D2C1B6");
 
-console.log(bgColor);
+function lightMode() {
+    document.documentElement.style.setProperty("--bg-color", "#D2C1B6");
+    document.documentElement.style.setProperty("--light-color", "#1B3C53");
+    document.documentElement.style.setProperty("--highlight", "#1B3C53");
+}
 
-themeSwitch.addEventListener("click", function(){
-    
-})
+themeSwitch.addEventListener("click", lightMode);
 
