@@ -52,6 +52,3 @@ function updateWeather() {
 }
 cityList.addEventListener("click", updateWeather);
 //Get set value to weather() from list
-
-
-
