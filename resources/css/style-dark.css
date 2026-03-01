@@ -1,18 +1,21 @@
+@import url("/resources/css/colors.css");
+
 * {
     box-sizing: border-box;
 }
 ::-webkit-scrollbar-track {
-    background: #D2C1B6;
+    background: var(--txt-color);
 }
 
 ::-webkit-scrollbar{
-    width: 10px; 
+    width: 11px; 
     
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #1B3C53;
-    border: #D2C1B6 3px solid;   
+    background: var(--bg-color);
+    /* background: #1B3C53; */
+    border: var(--txt-color) 3px solid;   
     border-radius: 15px;
 }
 
@@ -24,21 +27,24 @@
     --header-padding-bottom: 10px;
     --main-margin-top: 25px;
     --main-margin-bottom: 15px;
-    --case-margin-right: 20px;
+    --case-margin-right: 20px; 
     --padding-left: 30px;
     scroll-behavior: smooth;
 }
 
 
 body {
-    background-color: #1B3C53;
+    /* background-color: #1B3C53; */
+    background-color: var(--bg-color);
     scroll-behavior: smooth;
 
 }
 
 ::selection {
-    background-color: #78B9B5;
-    color: #1B3C53;
+    /* background-color: #78B9B5; */
+    background-color: var(--highlight);
+    /* color: #1B3C53; */
+    color: var(--bg-color);
 }
 
 
@@ -64,11 +70,10 @@ body {
     margin-top: 15px;
     margin-bottom: 30px;
     font-family: "Nunito", sans-serif;
-    /* font-family: "MuseoModerno"; */
     font-size: small;
-    color: #D2C1B6;
+    color: var(--txt-color);
     list-style: none;
-    border-left: #78B9B5 3px solid;
+    border-left: var(--highlight) 3px solid;
     letter-spacing: 1.2px;
 }
 
@@ -95,8 +100,7 @@ body {
     flex-direction: column;
     gap: 15px;
     font-family: "Nunito", sans-serif;
-    /* font-family: "MuseoModerno"; */
-    border-left: #78B9B5 3px solid;
+    border-left: var(--highlight) 3px solid;
     margin-right: 175px;
 }
 .about-me-text p{
@@ -129,7 +133,7 @@ body {
 
 .case-card p {
     width: 250px;
-    border-left: #78B9B5 3px solid;
+    border-left: var(--highlight) 3px solid;
 }
 
 
@@ -140,28 +144,28 @@ footer {
     font-family: monospace;
     font-weight: 300;
     font-size: x-large;
-    color: #1B3C53;
+    color: var(--bg-color);
     padding-top: 1%;
     padding-bottom: 2%;
-    background: #D2C1B6;
+    background: var(--txt-color);
 }
 
 footer i {
-    color: #1B3C53;
+    color: var(--bg-color);
 }
 
 footer i:hover {
-    color: #78B9B5;
+    color: var(--highlight);
 }
 
 footer p::selection {
-    background-color: #1B3C53;
-    color: #D2C1B6;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 
 footer span::selection {
-    background-color: #1B3C53;
-    color: #D2C1B6;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 
 #about-me {

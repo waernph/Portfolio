@@ -1,3 +1,4 @@
+@import url("/resources/css/colors.css");
 header {
     height: 80px;
     position: sticky;
@@ -48,31 +49,31 @@ header {
 
 .download-cv-button {
     font-family: "Orbitron";
-    color: #1B3C53;
+    color: var(--bg-color);
     padding: 4px 8px;
-    background-color: #D2C1B6;
-    border: #D2C1B6 2px solid;
+    background-color: var(--txt-color);
+    border: var(--txt-color) 2px solid;
     border-radius: 5px;
 }
 
 .contact-me-button {
     font-family: "Orbitron";
-    color: #78B9B5;
+    color: var(--highlight);
     padding: 4px 8px;
-    background-color: #1B3C53;
-    border: #78B9B5 2px solid;
+    background-color: var(--bg-color);
+    border: var(--highlight) 2px solid;
     border-radius: 5px;
 }
 
 .contact-me-button:hover {
-    background-color: #78B9B5;
-    color: #1B3C53;
+    background-color: var(--highlight);
+    color: var(--bg-color);
     transition: all 0.3s ease-in-out;
 }
 
 .download-cv-button:hover {
-    background-color: #78B9B5;
-    border-color: #78B9B5;
+    background-color: var(--highlight);
+    border-color: var(--highlight);
     transition: all 0.3s ease-in-out;
 }
 
@@ -84,19 +85,19 @@ header {
 .navbar-link:visited {
     font-family: "Orbitron";
     font-size: 20;
-    color: #D2C1B6;
+    color: var(--txt-color);
     border-bottom: transparent 3px solid;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar-link:hover {
-    color: #78B9B5;
-    border-bottom: #78B9B5 3px solid;
+    color: var(--highlight);
+    border-bottom: var(--highlight) 3px solid;
 }
 
 
 .navbar-link:active {
     font-family: "Orbitron";
     font-size: 20;
-}
+} 

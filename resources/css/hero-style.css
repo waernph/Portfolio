@@ -1,3 +1,4 @@
+@import url("/resources/css/colors.css");
 * {
     box-sizing: border-box;
 }
@@ -13,7 +14,7 @@
 
 .hero p {
     font-family: "Orbitron";
-    color: #D2C1B6;
+    color: var(--txt-color);
     padding-top: 25px;
     animation: logo-p 3s;
 }
@@ -120,25 +121,27 @@
 
 
 .city-list {
-    border: #D2C1B6 2px solid;
+    border: var(--txt-color) 2px solid;
     border-radius: 5px;
     margin-right: 20px;
     width: 130px;
     height: 30px;
     padding: 3px 8px;
-    background-color: #D2C1B6;
-    color: #1B3C53;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
     font-family: "Orbitron";
 }
 
 .city-list:hover {
-    background-color: #1B3C53;
-    color: #D2C1B6;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 
 .city-list::selection {
-    border: 0px #78B9B5 solid;
+    border: 0px var(--highlight-color) solid;
+    background-color: var(--txt-color);
 }
+
 
 .weather-info {
     display: flex;
@@ -146,7 +149,7 @@
     margin-left: 25px;
     list-style: none;
     font-family: "Orbitron";
-    color: #D2C1B6;
+    color: var(--txt-color);
 }
 
 .weather-info li {
