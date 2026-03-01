@@ -53,18 +53,30 @@ function updateWeather() {
 cityList.addEventListener("click", updateWeather);
 //Get set value to weather() from list
 
+let modalIsOpen = false;
+
 const contactForm = document.querySelector("#contact-form");
-function showContactModal() {
+function openModalWindow() {
     contactForm.style.opacity = "1";
     contactForm.style.top = "80px";
+    modalIsOpen = true;
 }
-
-document.querySelector("#button-open-modal").addEventListener("click", showContactModal);
 
 const closeContactFormButton = document.querySelector("#close-modal-button");
 function closeModalWindow() {
     contactForm.style.opacity = "0";
     contactForm.style.top = "-300px";
+    modalIsOpen = false;
 }
+
+const modalButton = document.querySelector("#button-open-modal");
 closeContactFormButton.addEventListener("click", closeModalWindow);
+
+modalButton.addEventListener("click", function() {
+    if (!modalIsOpen) {
+        openModalWindow();
+    } else {
+        closeModalWindow();
+    }
+})
 
