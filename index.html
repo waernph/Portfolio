@@ -28,14 +28,19 @@
 </head>
 
 <body>
-   <section class="modal" id="contact-form">
+  <section class="modal" id="contact-form">
+    <div class="modal-header">
       <h3>Enter email and message</h3>
-      <div>
-        <input type="email" name="email" placeholder="email">
-        <input type="textarea" name="message" placeholder="message">
-        <button type="submit" id="send-message">Send</button>
-      </div>
-    </section>
+      <button class="close-modal-button" id="close-modal-button" name="close-modal-button"><i class="fa-solid fa-xmark"></i></button>
+      <label for="close-modal-button" hidden>Close modal window</label>
+    </div>
+    <div class="form-content">
+
+      <input type="email" name="email" placeholder="email">
+      <textarea name="message" id="message" rows="8" placeholder="message"></textarea>
+      <button type="submit" id="send-message">Send</button>
+    </div>
+  </section>
   <header class="header blur">
     <!-- navbar -->
     <nav class="navbar">
