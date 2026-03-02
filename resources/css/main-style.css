@@ -4,7 +4,8 @@
 }
 
 main {
-    padding-left: var(--padding-left);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 main h2 {

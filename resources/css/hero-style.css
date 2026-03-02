@@ -115,6 +115,7 @@
 .weather{
     top: 15px;
     left: 0px;
+    margin-left: 5%;
     position: absolute;
     z-index: 15;
 }
@@ -123,10 +124,9 @@
 .city-list {
     border: var(--light-color) 2px solid;
     border-radius: 5px;
-    margin-right: 20px;
     width: 130px;
     height: 30px;
-    padding: 3px 8px;
+
     background-color: var(--light-color);
     color: var(--bg-color);
     font-family: "Orbitron";
@@ -146,12 +146,10 @@
 .weather-info {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    justify-content: start;
+    gap: 20px;
     list-style: none;
     font-family: "Orbitron";
     color: var(--light-color);
 }
 
-.weather-info li {
-    margin-right: 25px;
-}

@@ -3,30 +3,31 @@
 * {
     box-sizing: border-box;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--light-color);
 }
 
-::-webkit-scrollbar{
-    width: 11px; 
-    
+::-webkit-scrollbar {
+    width: 11px;
+
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--bg-color);
-    border: var(--light-color) 3px solid;   
+    border: var(--light-color) 3px solid;
     border-radius: 15px;
 }
 
 :root {
     --margin-left: 10%;
     --margin-right: 10%;
-    
+
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
     --main-margin-top: 25px;
     --main-margin-bottom: 15px;
-    --case-margin-right: 20px; 
+    --case-margin-right: 20px;
     --padding-left: 30px;
     scroll-behavior: smooth;
 }
@@ -50,7 +51,7 @@ body {
 .logos {
     list-style: none;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     padding-top: var(--main-margin-top);
     flex-wrap: wrap;
 }
@@ -77,9 +78,13 @@ body {
 }
 
 .skill-list li {
-    width: 100px;
+    width: 150px;
     margin-bottom: 10px;
     padding-left: 10px;
+}
+
+.about-me {
+    margin-top: 30px;
 }
 
 .content-about-me {
@@ -102,7 +107,8 @@ body {
     border-left: var(--highlight) 3px solid;
     margin-right: 175px;
 }
-.about-me-text p{
+
+.about-me-text p {
     margin: 0px;
 }
 
@@ -110,11 +116,12 @@ body {
 .case-section {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .case-list {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -122,8 +129,6 @@ body {
 .case-card {
     display: flex;
     flex-direction: column;
-    margin-right: var(--case-margin-right);
-    width: 300px;
 }
 
 .case-image {
@@ -131,10 +136,14 @@ body {
 }
 
 .case-card p {
+    display: flex;
     width: 250px;
     border-left: var(--highlight) 3px solid;
 }
 
+.references {
+    margin-top: 30px;
+}
 
 footer {
     display: flex;
