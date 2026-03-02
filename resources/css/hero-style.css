@@ -38,7 +38,7 @@
 .hero-background-element-left {
     top: 5px;
     left: 0px;
-    background-color: #74ff86;
+    background-color: var(--hero-color-one);
     position: absolute;
     height: 30%;
     width: 30%;
@@ -51,7 +51,7 @@
 .hero-background-element-right {
     bottom: 0px;
     right: 0px;
-    background-color: #b978ac;
+    background-color: var(--hero-color-two);
     position: absolute;
     height: 50%;
     width: 30%;

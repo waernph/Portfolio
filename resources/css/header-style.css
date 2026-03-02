@@ -23,6 +23,7 @@ header {
 }
 
 .navbar-link {
+    display: flex;
     margin-left: 30px;
 }
 

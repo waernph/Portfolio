@@ -72,7 +72,7 @@ function closeModalWindow() {
 const modalButton = document.querySelector("#button-open-modal");
 closeContactFormButton.addEventListener("click", closeModalWindow);
 
-modalButton.addEventListener("click", function() {
+modalButton.addEventListener("click", function () {
     if (!modalIsOpen) {
         openModalWindow();
     } else {
@@ -87,16 +87,33 @@ function lightMode() {
     document.documentElement.style.setProperty("--bg-color", "#FCF8EC");
     document.documentElement.style.setProperty("--light-color", "#303852");
     document.documentElement.style.setProperty("--highlight", "#3F6C61");
+    document.documentElement.style.setProperty("--hero-color-one", "#39e950");
+    document.documentElement.style.setProperty("--hero-color-two", "#e63ac4");
+
+    document.querySelector(".blur").style.backdropFilter = "blur(16px) brightness(1.1)";
+    document.querySelector("#html5-logo").src = "/resources/media/logos/HTML5_logo_and_wordmark.svg";
+    document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark.svg";
+    document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
+    document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
+
 }
 function darkMode() {
     document.documentElement.style.setProperty("--bg-color", "#1B3C53");
     document.documentElement.style.setProperty("--light-color", "#D2C1B6");
-    document.documentElement.style.setProperty("--highlight", "#78B9B5");  
+    document.documentElement.style.setProperty("--highlight", "#78B9B5");
+    document.documentElement.style.setProperty("--hero-color-one", "#74ff86");
+    document.documentElement.style.setProperty("--hero-color-two", "#b978ac");
+
+    document.querySelector(".blur").style.backdropFilter = "blur(16px) brightness(0.7)";
+    document.querySelector("#html5-logo").src = "/resources/media/logos/HTML5_logo_and_wordmark_white.svg";
+    document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark_white.svg";
+    document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_White.svg";
+    document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield.svg";
 }
 
 
-themeSwitch.addEventListener("click", function() {
-    if(isDarkTheme) {
+themeSwitch.addEventListener("click", function () {
+    if (isDarkTheme) {
         lightMode();
         isDarkTheme = false;
     }
@@ -105,6 +122,6 @@ themeSwitch.addEventListener("click", function() {
         isDarkTheme = true;
     }
     console.log(isDarkTheme);
-    
+
 });
 
