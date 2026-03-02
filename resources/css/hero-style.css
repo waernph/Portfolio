@@ -142,7 +142,11 @@
     background-color: var(--light-color);
 }
 
-
+.weather-icon {
+    display: flex;
+    fill: greenyellow;
+    width: 30px;
+}
 .weather-info {
     display: flex;
     align-items: center;

@@ -36,10 +36,13 @@ async function weather(cityId = 2711533) {
     let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`
     const response = await fetch(endpoint)
     const result = await response.json();
+    
     const temperatureC = (Math.round(result.main.temp) + "°C");
-    const weather = result.weather[0].main;
-    document.getElementById("weather-condition").innerText = weather;
+    const weather = result.weather[0].description;
+    const icon = result.weather[0].icon;
     document.getElementById("temperature").innerText = temperatureC;
+    document.getElementById("weather-condition").innerText = weather;
+    
 }
 weather();
 //Fetch weather data with input default set to Göteborg
@@ -85,10 +88,10 @@ const themeSwitch = document.querySelector("#theme-button");
 let isDarkTheme = true;
 function lightMode() {
     document.documentElement.style.setProperty("--bg-color", "#FCF8EC");
-    document.documentElement.style.setProperty("--light-color", "#303852");
-    document.documentElement.style.setProperty("--highlight", "#3F6C61");
+    document.documentElement.style.setProperty("--light-color", "#1B3C53");
+    document.documentElement.style.setProperty("--highlight", "#1B3C53");
     document.documentElement.style.setProperty("--hero-color-one", "#39e950");
-    document.documentElement.style.setProperty("--hero-color-two", "#e63ac4");
+    document.documentElement.style.setProperty("--hero-color-two", "#af73a3");
 
     document.querySelector(".blur").style.backdropFilter = "blur(16px) brightness(1.1)";
     document.querySelector("#html5-logo").src = "/resources/media/logos/HTML5_logo_and_wordmark.svg";

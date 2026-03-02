@@ -71,12 +71,14 @@ header {
 .contact-me-button:hover {
     background-color: var(--highlight);
     color: var(--bg-color);
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
 .download-cv-button:hover {
     background-color: var(--highlight);
     border-color: var(--highlight);
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 

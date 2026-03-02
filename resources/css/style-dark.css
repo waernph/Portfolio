@@ -90,6 +90,7 @@ body {
 .content-about-me {
     display: flex;
     align-items: start;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -105,7 +106,7 @@ body {
     gap: 15px;
     font-family: "Nunito", sans-serif;
     border-left: var(--highlight) 3px solid;
-    margin-right: 175px;
+    margin-right: auto
 }
 
 .about-me-text p {
