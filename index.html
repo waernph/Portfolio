@@ -31,7 +31,8 @@
   <section class="modal" id="contact-form">
     <div class="modal-header">
       <h3>Enter email and message</h3>
-      <button class="close-modal-button" id="close-modal-button" name="close-modal-button"><i class="fa-solid fa-xmark"></i></button>
+      <button class="close-modal-button" id="close-modal-button" name="close-modal-button"><i
+          class="fa-solid fa-xmark"></i></button>
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
     <div class="form-content">
@@ -50,23 +51,30 @@
         <li><a class="navbar-link" href="#about-me">About me</a></li>
         <li><a class="navbar-link" href="#portfolio">Portfolio</a></li>
         <li><a class="navbar-link" href="#references">References</a></li>
+        <li>
+          <button type="button" name="theme-button" id="theme-button" class="theme-button"><i
+              class="fa-regular fa-lightbulb"></i></button>
+          <label for="theme-button" hidden>Button to toggle theme</label>
+        </li>
       </ul>
       <ul class="buttons-list">
         <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
               class="download-cv-button nav-button">Download
               CV</button></a></li>
-        <li><button class="contact-me-button nav-button nav-button" id="button-open-modal">Contact me</button></li>
+        <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
       </ul>
     </nav>
   </header>
   <section class="hero">
     <div class="weather">
       <ul class="weather-info">
-        <select class="city-list" name="city" id="city">
-          <option value="2711533">Göteborg</option>
-          <option value="2673730">Stockholm</option>
-          <option value="2692969">Malmö</option>
-        </select>
+        <li>
+          <select class="city-list" name="city" aria-label="List of cities to display weather" id="city">
+            <option value="2711533">Göteborg</option>
+            <option value="2673730">Stockholm</option>
+            <option value="2692969">Malmö</option>
+          </select>
+        </li>
         <li id="temperature"></li>
         <li id="weather-condition"></li>
       </ul>
@@ -220,8 +228,10 @@
   <footer>
     <p>
       &copy; Philip Waern <span id="yearNow"></span>
-      <a href="https://github.com/waernph" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/philip-w%C3%A6rn/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/waernph" target="_blank" aria-label="Link to GitHub"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/philip-w%C3%A6rn/" target="_blank" aria-label="Link to LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
     </p>
   </footer>
   <script src="/resources/js/scripts.js"></script>
