@@ -35,7 +35,7 @@
 body {
     /* background-color: #1B3C53; */
     background-color: var(--bg-color);
-    scroll-behavior: smooth;
+    transition: all 1s ease-in-out;
 
 }
 
