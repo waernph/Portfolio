@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 0px;
     height: 90vh;
     position: relative;
 }
@@ -36,8 +35,8 @@
 
 
 .hero-background-element-left {
-    top: 5px;
-    left: 0px;
+    top: 100px;
+    left: -100px;
     background-color: var(--hero-color-one);
     position: absolute;
     height: 30%;
@@ -126,10 +125,10 @@
     border-radius: 5px;
     width: 130px;
     height: 30px;
-
     background-color: var(--light-color);
     color: var(--bg-color);
     font-family: "Orbitron";
+    
 }
 
 .city-list:hover {
@@ -142,11 +141,6 @@
     background-color: var(--light-color);
 }
 
-.weather-icon {
-    display: flex;
-    fill: greenyellow;
-    width: 30px;
-}
 .weather-info {
     display: flex;
     align-items: center;
@@ -154,6 +148,8 @@
     gap: 20px;
     list-style: none;
     font-family: "Orbitron";
+    letter-spacing: 1.2px;
+    font-weight: 400;
     color: var(--light-color);
 }
 
