@@ -130,6 +130,7 @@ themeSwitch.addEventListener("click", function () {
 
 const refText = document.querySelector("#reference-text");
 const refPerson = document.querySelector("#reference-person");
+const refCompany = document.querySelector("#reference-company");
 let refIndex = 0;
 const refDict = [
     {
@@ -142,6 +143,11 @@ const refDict = [
         "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
         "company": "BST"
     },
+    {
+        "name": "Jenny Spetz",
+        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam? dolor sit amet consectetur adipisicing",
+        "company": "Liseberg"
+    },
 ]
 
 
@@ -150,8 +156,9 @@ function reference() {
         if (refIndex == refDict.length) {
             refIndex = 0;
         }
-        refPerson.innerText = refDict[refIndex].name;
         refText.innerText = refDict[refIndex].text;
+        refPerson.innerText = refDict[refIndex].name;
+        refCompany.innerText = refDict[refIndex].company;
         refIndex++;
 
     }, 5000);
