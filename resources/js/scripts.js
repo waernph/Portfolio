@@ -37,11 +37,13 @@ async function weather(cityId = 2711533) {
     const response = await fetch(endpoint)
     const result = await response.json();
 
+
     const temperatureC = (Math.round(result.main.temp) + "°C");
     const weather = result.weather[0].description;
     const icon = result.weather[0].icon;
     document.getElementById("temperature").innerText = temperatureC;
     document.getElementById("weather-condition").innerText = weather;
+
 
 }
 weather();
@@ -151,3 +153,39 @@ addEventListener("scroll", function(){
     } 
 })
 
+const refText = document.querySelector("#reference-text");
+const refPerson = document.querySelector("#reference-person");
+const refCompany = document.querySelector("#reference-company");
+let refIndex = 0;
+const refDict = [
+    {
+        "name": "Håkan Larsson",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
+        "company": "Maverick"
+    },
+    {
+        "name": "Jakob Rockmyr",
+        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
+        "company": "BST"
+    },
+    {
+        "name": "Jenny Spetz",
+        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam? dolor sit amet consectetur adipisicing",
+        "company": "Liseberg"
+    },
+]
+
+
+function reference() {
+    setInterval(() => {
+        if (refIndex == refDict.length) {
+            refIndex = 0;
+        }
+        refText.innerText = refDict[refIndex].text;
+        refPerson.innerText = refDict[refIndex].name;
+        refCompany.innerText = refDict[refIndex].company;
+        refIndex++;
+
+    }, 5000);
+}
+reference();

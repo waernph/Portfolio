@@ -48,17 +48,18 @@
     <nav class="navbar">
       <a class="logo" href="#"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></a>
       <ul class="navbar-ul">
-        <li><a class="navbar-link" href="#skills">Skills</a></li>
         <li><a class="navbar-link" href="#about-me">About me</a></li>
+        <li><a class="navbar-link" href="#skills">Skills</a></li>
         <li><a class="navbar-link" href="#portfolio">Portfolio</a></li>
         <li><a class="navbar-link" href="#references">References</a></li>
+
+      </ul>
+      <ul class="buttons-list">
         <li>
           <button type="button" name="theme-button" id="theme-button" class="theme-button"><i
               class="fa-regular fa-lightbulb"></i></button>
           <label for="theme-button" hidden>Button to toggle theme</label>
         </li>
-      </ul>
-      <ul class="buttons-list">
         <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
               class="download-cv-button nav-button">Download
               CV</button></a></li>
@@ -82,10 +83,47 @@
     </div>
     <div class="hero-background-element-left"></div>
     <div class="hero-background-element-right"></div>
-    <img src="/resources/media/logos/danish_ae.svg" alt="logo with a danish ä">
-    <p class="tag-line" id="tag-line"></p>
+    <div class="logo-tag-line">
+      <img class="hero-logo" src="/resources/media/logos/danish_ae.svg" alt="logo with a danish ä">
+      <h1>Philip Waern is a...</h1>
+      <p class="tag-line" id="tag-line"></p>
+    </div>
   </section>
   <main>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="about-me" id="about-me">
+      <h2>About me</h2>
+      <div class="content-about-me">
+        <video autoplay muted loop>
+          <source src="/resources/media/motion/Profilepic.webm" />
+        </video>
+        <article class="about-me-text">
+          <p>
+            I'm Philip Waern, a Backend Developer student at Jensen YH with a focus on cloud technologies.
+          </p>
+          <p>
+            With over 15 years of experience as a video producer and photographer, I've developed a strong creative
+            mindset
+            and a structured approach to problem-solving. Working in fast-paced productions has taught me how to analyze
+            complex challenges, adapt quickly, and deliver high-quality results under pressure.
+          </p>
+          <p>
+            I genuinely enjoy diving into new technologies and methodologies, understanding how things work under the
+            hood,
+            and continuously expanding my skill set. Learning is a big part of what drives me — whether it's exploring
+            cloud
+            platforms, backend or new development practices.
+          </p>
+          <p>
+            Today, I'm bringing that same curiosity, creativity, and analytical thinking into software development. My
+            goal
+            is to become a professional backend developer, building scalable and reliable cloud-based solutions while
+            continuously growing as a developer.
+          </p>
+        </article>
+      </div>
+    </section>
     <section id="skills">
       <h2>Skills</h2>
       <!-- icons -->
@@ -96,11 +134,21 @@
             <li>OOP</li>
             <li>ASP.NET</li>
             <li>Entity Framework</li>
-            <li>SQL Server</li>
             <li>Web API</li>
             <li>AutoMapper</li>
             <li>Swagger/Postman</li>
             <li>JWT</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/resources/media/logos/Microsoft_SQL_Server_2025_icon.svg" alt="Microsoft SQL Server 2025 logo">
+          <ul class="skill-list">
+            <li>SQL Server</li>
+            <li>SQL Server Management System</li>
+            <li>DDL/DML</li>
+            <li>Subquaries</li>
+            <li>Stored Procedures</li>
+            <li>Transactions</li>
           </ul>
         </li>
         <li>
@@ -141,40 +189,6 @@
         </li>
       </ul>
     </section>
-    <!-- ABOUT ME SECTION -->
-    <section class="about-me" id="about-me">
-      <h2>About me</h2>
-      <div class="content-about-me">
-        <video autoplay muted loop>
-          <source src="/resources/media/motion/Profilepic.webm" />
-        </video>
-        <article class="about-me-text">
-          <p>
-            I'm Philip Waern, a Backend Developer student at Jensen YH with a focus on cloud technologies.
-          </p>
-          <p>
-            With over 15 years of experience as a video producer and photographer, I've developed a strong creative
-            mindset
-            and a structured approach to problem-solving. Working in fast-paced productions has taught me how to analyze
-            complex challenges, adapt quickly, and deliver high-quality results under pressure.
-          </p>
-          <p>
-            I genuinely enjoy diving into new technologies and methodologies, understanding how things work under the
-            hood,
-            and continuously expanding my skill set. Learning is a big part of what drives me — whether it's exploring
-            cloud
-            platforms, backend or new development practices.
-          </p>
-          <p>
-            Today, I'm bringing that same curiosity, creativity, and analytical thinking into software development. My
-            goal
-            is to become a professional backend developer, building scalable and reliable cloud-based solutions while
-            continuously growing as a developer.
-          </p>
-        </article>
-      </div>
-    </section>
-
     <section id="portfolio" class="case-section">
       <h2>Portfolio</h2>
       <!-- Inledande text kring case -->
@@ -186,6 +200,8 @@
           <p>An assignment to build an API for a bank. Some of the techiques used are Entity Framework, Controllers,
             JWT for autharization and authentication, AutoMapper Swagger
           </p>
+          <a class="case-btn" href="https://github.com/waernph/BankOfWaern.git" target="_blank"
+            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
         </li>
         <li class="case-card">
           <h3>BrewHub</h3>
@@ -193,24 +209,38 @@
               src="/resources/media/graphics/case-placeholder.png" alt="img of case"></a>
           <p>An assignment to build an API for a forum. Some of the techiques used are Entity Framework, Controllers,
             JWT for autharization and authentication, AutoMapper Swagger</p>
+          <a class="case-btn" href="https://github.com/waernph/BrewHub.git" target="_blank"
+            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
         </li>
+
         <li class="case-card">
           <h3>Contacts book</h3>
           <a href="https://github.com/waernph/kontaktbok.git" target="_blank"><img class="case-image"
               src="/resources/media/graphics/case-placeholder.png" alt="img of case"></a>
           <p>A group assignment during the course C#/.NET, Basics where we developed a contact book using Avalonia and
             saved to a json-file.</p>
+          <a class="case-btn" href="https://github.com/waernph/kontaktbok.git" target="_blank"
+            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
         </li>
         <li class="case-card">
           <h3>Shotgun</h3>
           <a href="https://github.com/waernph/shotgun3.git" target="_blank"><img class="case-image"
               src="/resources/media/graphics/case-placeholder.png" alt="img of case"></a>
           <p>A console game developed as a examination project during the course C#/.NET, Basics</p>
+          <a class="case-btn" href="https://github.com/waernph/shotgun3.git" target="_blank"
+            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
         </li>
       </ul>
     </section>
     <section class="references" id="references">
       <h2>References</h2>
+      <div class="reference-div">
+        <em class="reference-text" id="reference-text"></em>
+        <div class="reference-person" >
+          <h4 id="reference-person"></h4>
+          <p class="reference-company" id="reference-company"></p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>

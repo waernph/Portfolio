@@ -10,10 +10,12 @@ main {
 
 main h2 {
     font-family: "Orbitron";
-    font-size: x-large;
+    font-size: 1.7rem;
     color: var(--light-color);
     margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
 
 main h3 {
@@ -25,7 +27,7 @@ main h3 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.5rem;
     letter-spacing: 1.2px;
 }
 
