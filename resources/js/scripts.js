@@ -134,11 +134,13 @@ let refIndex = 0;
 const refDict = [
     {
         "name": "Håkan Larsson",
-        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
+        "company": "Maverick"
     },
     {
         "name": "Jakob Rockmyr",
-        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
+        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
+        "company": "BST"
     },
 ]
 
