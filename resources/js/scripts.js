@@ -132,24 +132,24 @@ const refText = document.querySelector("#reference-text");
 const refPerson = document.querySelector("#reference-person");
 let refIndex = 0;
 const refDict = [
-    [
-        "Håkan Larsson",
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
-    ],
-    [
-        "Jakob Rockmyr",
-        "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
-    ]
+    {
+        "name": "Håkan Larsson",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
+    },
+    {
+        "name": "Jakob Rockmyr",
+        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?"
+    },
 ]
+
+
 function reference() {
     setInterval(() => {
-        console.log(refIndex);
-        
         if (refIndex == refDict.length) {
             refIndex = 0;
         }
-        refPerson.innerText = refDict[refIndex][0];
-        refText.innerText = refDict[refIndex][1];
+        refPerson.innerText = refDict[refIndex].name;
+        refText.innerText = refDict[refIndex].text;
         refIndex++;
 
     }, 5000);
