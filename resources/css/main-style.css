@@ -10,10 +10,12 @@ main {
 
 main h2 {
     font-family: "Orbitron";
-    font-size: x-large;
+    font-size: 1.7rem;
     color: var(--light-color);
     margin-top: var(--main-margin-top);
     margin-bottom: var(--main-margin-bottom);
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
 
 main h3 {
