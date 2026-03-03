@@ -2,6 +2,12 @@
 * {
     box-sizing: border-box;
 }
+h1{
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
 .hero {
     display: flex;
     flex-direction: column;
@@ -11,10 +17,9 @@
     position: relative;
 }
 
-.hero p {
+.tag-line {
     font-family: "Orbitron";
     color: var(--light-color);
-    padding-top: 25px;
     animation: logo-p 3s;
 }
 
@@ -98,7 +103,8 @@
 .logo-tag-line{
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    align-items: center;
+    gap: 8%;
 }
 .hero-logo {
     height: 35vh;
