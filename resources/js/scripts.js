@@ -33,15 +33,17 @@ tagLine();
 async function weather(cityId = 2711533) {
 
     const apiKey = "69ec97f7b99ef917a294c46362d91722";
-    let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`
+    let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`;
     const response = await fetch(endpoint)
     const result = await response.json();
+
 
     const temperatureC = (Math.round(result.main.temp) + "°C");
     const weather = result.weather[0].description;
     const icon = result.weather[0].icon;
     document.getElementById("temperature").innerText = temperatureC;
     document.getElementById("weather-condition").innerText = weather;
+
 
 }
 weather();
@@ -98,6 +100,7 @@ function lightMode() {
     document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark.svg";
     document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
     document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
+    document.querySelector("#send-message").style.color = "#FCF8EC"; 
 
 }
 function darkMode() {
@@ -127,6 +130,28 @@ themeSwitch.addEventListener("click", function () {
     console.log(isDarkTheme);
 
 });
+
+
+addEventListener("resize", function () {
+    windowWidth = window.innerWidth;
+    if (windowWidth <= 950) {
+        console.log(windowWidth);
+    }
+})
+isScrollingDown = false;
+windowScroll = 0;
+addEventListener("scroll", function(){
+    if (window.scrollY > windowScroll + 100) {
+        windowScroll = window.scrollY;
+        isScrollingDown = true;
+        console.log(isScrollingDown);
+    } 
+    else if (window.scrollY < windowScroll - 100) {
+        windowScroll = window.scrollY;
+        isScrollingDown = false;
+        console.log(isScrollingDown);
+    } 
+})
 
 const refText = document.querySelector("#reference-text");
 const refPerson = document.querySelector("#reference-person");
