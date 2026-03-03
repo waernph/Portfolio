@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    .logos {
+        flex-direction: column;
+    }
+    .reference-text {
+        font-size: 1.5rem;
+    }
+    .navbar {
+        display: none;
+    }
+}

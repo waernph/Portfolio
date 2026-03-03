@@ -100,7 +100,7 @@ function lightMode() {
     document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark.svg";
     document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
     document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
-    document.querySelector("#send-message").style.color = "#FCF8EC"; 
+    document.querySelector("#send-message").style.color = "#FCF8EC";
 
 }
 function darkMode() {
@@ -140,23 +140,23 @@ addEventListener("resize", function () {
 })
 isScrollingDown = false;
 windowScroll = 0;
-addEventListener("scroll", function(){
+addEventListener("scroll", function () {
     if (window.scrollY > windowScroll + 100) {
         windowScroll = window.scrollY;
         isScrollingDown = true;
         console.log(isScrollingDown);
-    } 
+    }
     else if (window.scrollY < windowScroll - 100) {
         windowScroll = window.scrollY;
         isScrollingDown = false;
         console.log(isScrollingDown);
-    } 
+    }
 })
 
 const refText = document.querySelector("#reference-text");
 const refPerson = document.querySelector("#reference-person");
 const refCompany = document.querySelector("#reference-company");
-let refIndex = 0;
+let refIndex = 1;
 const refDict = [
     {
         "name": "Håkan Larsson",
@@ -174,7 +174,9 @@ const refDict = [
         "company": "Liseberg"
     },
 ]
-
+refText.innerText = refDict[0].text;
+refPerson.innerText = refDict[0].name;
+refCompany.innerText = refDict[0].company;
 
 function reference() {
     setInterval(() => {
