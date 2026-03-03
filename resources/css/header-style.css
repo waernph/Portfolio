@@ -31,14 +31,12 @@ header {
 .buttons-list {
     display: flex;
     margin-left: auto;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     list-style: none;
 }
 
-.buttons-list li {
-    /* margin-right: 30px; */
-
-}
 
 .logo {
     display: flex;
@@ -112,10 +110,9 @@ header {
 .theme-button {
     background-color: transparent;
     border: transparent;
-    font-size: larger;
+    font-size: 1.3rem;
     color: var(--light-color);
-    margin-left: 15px;
-    padding: 15px;
+    padding: 0px;
 }
 .theme-button:hover {
     cursor: pointer;
