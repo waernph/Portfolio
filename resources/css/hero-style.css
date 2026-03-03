@@ -95,9 +95,13 @@
         opacity: 60%;
     }
 }
-
-.hero img {
-    height: 25vh;
+.logo-tag-line{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.hero-logo {
+    height: 35vh;
     animation: logo-appear 3s;
 }
 
