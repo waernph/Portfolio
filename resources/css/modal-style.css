@@ -65,3 +65,14 @@
     font-family: "Nunito", sans-serif;
     width: 400px;
 }
+
+
+
+/* MODAL MENU */
+.menu-modal {
+    position: sticky;
+    height: 100vh;
+}
+.navbar-link-modal-ul{
+    
+}
