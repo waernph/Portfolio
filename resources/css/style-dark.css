@@ -95,8 +95,6 @@ body {
 
 .content-about-me video {
     width: 400px;
-    z-index: -100;
-    margin-right: 15px;
 }
 
 .about-me-text {

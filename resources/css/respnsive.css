@@ -1,11 +1,64 @@
-@media (max-width: 500px) {
-    .logos {
-        flex-direction: column;
+@media (max-width: 400px) {
+
+    /* NAVBAR */
+    .navbar-ul {
+        display: none;
     }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-button {
+        width: 100px;
+    }
+
+    /* NAVBAR */
+
+    /* ------------------------------------------------ */
+
+    /* HERO */
+
     .reference-text {
         font-size: 1.5rem;
     }
-    .navbar {
-        display: none;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tag-line {
+        position: absolute;
+        bottom: 17%;
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* HERO */
+    /* ------------------------------------------------ */
+
+    /* ABOUT ME */
+    .content-about-me video {
+        width: 100%
+    }
+    .about-me-text{
+        margin-right: 0px;
+    }
+    .about-me-text p {
+        width: 100%;
+    }
+
+    /* ABOUT ME */
+    /* ------------------------------------------------ */
+
+
+    .logos {
+        flex-direction: column;
     }
 }

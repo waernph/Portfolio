@@ -70,9 +70,11 @@
 
 /* MODAL MENU */
 .menu-modal {
+    display: none;
     position: sticky;
+    
     height: 100vh;
 }
 .navbar-link-modal-ul{
-    
+
 }
