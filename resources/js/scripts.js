@@ -63,7 +63,7 @@ let modalIsOpen = false;
 const contactForm = document.querySelector("#contact-form");
 function openModalWindow() {
     contactForm.style.opacity = "1";
-    contactForm.style.top = "80px";
+    contactForm.style.top = "70px";
     modalIsOpen = true;
 }
 
@@ -100,9 +100,9 @@ function lightMode() {
     document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark.svg";
     document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
     document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
-    document.querySelector("#send-message").style.color = "#FCF8EC"; 
-
+    document.querySelector("#send-message").style.color = "#FCF8EC";
 }
+
 function darkMode() {
     document.documentElement.style.setProperty("--bg-color", "#1B3C53");
     document.documentElement.style.setProperty("--light-color", "#D2C1B6");
@@ -140,23 +140,23 @@ addEventListener("resize", function () {
 })
 isScrollingDown = false;
 windowScroll = 0;
-addEventListener("scroll", function(){
+addEventListener("scroll", function () {
     if (window.scrollY > windowScroll + 100) {
         windowScroll = window.scrollY;
         isScrollingDown = true;
         console.log(isScrollingDown);
-    } 
+    }
     else if (window.scrollY < windowScroll - 100) {
         windowScroll = window.scrollY;
         isScrollingDown = false;
         console.log(isScrollingDown);
-    } 
+    }
 })
 
 const refText = document.querySelector("#reference-text");
 const refPerson = document.querySelector("#reference-person");
 const refCompany = document.querySelector("#reference-company");
-let refIndex = 0;
+let refIndex = 1;
 const refDict = [
     {
         "name": "Håkan Larsson",
@@ -174,7 +174,9 @@ const refDict = [
         "company": "Liseberg"
     },
 ]
-
+refText.innerText = refDict[0].text;
+refPerson.innerText = refDict[0].name;
+refCompany.innerText = refDict[0].company;
 
 function reference() {
     setInterval(() => {
@@ -189,3 +191,32 @@ function reference() {
     }, 5000);
 }
 reference();
+
+let menuIsOpen = false;
+const menuModal = document.querySelector("#menu-modal");
+const menuButton = document.querySelector("#menu-button");
+menuButton.addEventListener("click", function () {
+    if (!menuIsOpen) {
+        openMenu();
+    }
+    else {
+        closeMenu();
+    }
+});
+
+function openMenu() {
+    menuModal.style.opacity = "1";
+    menuModal.style.top = "60px";
+    menuIsOpen = true;
+}
+function closeMenu() {
+    menuModal.style.opacity = "0";
+    menuModal.style.top = "-300px";
+    menuIsOpen = false;
+}
+
+const navbarLinkModal = document.querySelectorAll(".navbar-link-modal");
+for (let i = 0; i < navbarLinkModal.length; i++) {
+    const element = navbarLinkModal[i];
+    element.addEventListener("click", closeMenu);
+}

@@ -1,0 +1,167 @@
+@media (max-width: 400px) {
+
+    /* CONTACT MODAL */
+    .modal {
+        padding: 15px;
+        width: 100vw;
+        margin: 5px;
+    }
+
+    /* CONTACT MODAL */
+
+
+    /* NAVBAR */
+    .navbar-ul {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .nav-button {
+        width: 100px;
+    }
+
+    /* NAVBAR */
+
+    /* ------------------------------------------------ */
+
+    /* HERO */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tag-line {
+        position: absolute;
+        bottom: 17%;
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    /* HERO */
+    /* ------------------------------------------------ */
+
+    h2 {
+        text-align: center;
+    }
+
+    /* ABOUT ME */
+    .content-about-me video {
+        width: 100%
+    }
+
+    .about-me-text {
+        margin-right: 0px;
+    }
+
+    .about-me-text p {
+        width: 100%;
+    }
+
+    #about-me {
+        scroll-margin-top: 80px;
+    }
+
+    /* ABOUT ME */
+    /* ------------------------------------------------ */
+    /* SKILLS */
+
+    .logos {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .logos li img {
+
+        width: 60px;
+        margin-right: 0px;
+    }
+
+    .logos li {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .skill-list {
+        margin-top: 30px;
+    }
+
+    #skills {
+        scroll-margin-top: 80px;
+    }
+
+    /* SKILLS */
+    /* ------------------------------------------------ */
+
+    /* PORTFOLIO */
+    .case-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 5vh;
+
+    }
+
+    .case-image {
+        width: 100%;
+    }
+
+    .case-card p {
+        width: 100%;
+    }
+
+    #portfolio {
+        scroll-margin-top: 80px;
+    }
+
+    /* PORTFOLIO */
+    /* ------------------------------------------------ */
+
+    /* REFERENCES */
+    .references {
+        height: 40vh;
+        justify-content: space-between;
+    }
+
+    .reference-div {
+        margin-top: 7vh;
+    }
+
+    .reference-text {
+        font-size: 1.4rem;
+    }
+
+    #references {
+        scroll-margin-top: 80px;
+    }
+
+    /* REFERENCES */
+    /* ------------------------------------------------ */
+
+    /* FOOTER */
+    footer {
+        font-size: 1.2rem;
+        height: 12vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-list {
+        flex-direction: column-reverse;
+    }
+
+    .footer-list li a {
+        font-size: 2rem;
+    }
+
+}
