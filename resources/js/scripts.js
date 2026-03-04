@@ -220,3 +220,9 @@ for (let i = 0; i < navbarLinkModal.length; i++) {
     const element = navbarLinkModal[i];
     element.addEventListener("click", closeMenu);
 }
+
+const sendButton = document.querySelector("#send-message");
+sendButton.addEventListener("click", function() {
+    sendButton.style.backgroundColor = "var(--highlight)"
+    sendButton.innerText = "Email sent!";
+})
