@@ -37,8 +37,8 @@
     </div>
     <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank"
       class="form-content">
-      <input required type="email" name="email" placeholder="email">
-      <textarea required name="message" id="message" rows="8" placeholder="message"></textarea>
+      <input required autocomplete="email" type="email" name="email" placeholder="email">
+      <textarea required autocomplete="name" name="message" id="message" rows="8" placeholder="message"></textarea>
       <input type="hidden" name="_captcha" value="false">
       <button type="submit" name="send-message" id="send-message">
         <p>Send</p>
@@ -56,11 +56,12 @@
     </ul>
   </section>
 
-  <header class="header blur">
+  <header class="header blur" id="header">
     <!-- navbar -->
     <nav class="navbar">
       <a class="logo" href="#"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></a>
-      <button class="menu-button" id="menu-button"><i class="fa-solid fa-bars"></i></button>
+      <button class="menu-button" name="menu-button" id="menu-button"><i class="fa-solid fa-bars"></i></button>
+      <label for="menu-button" hidden>Menu button</label>
       <ul class="navbar-ul">
         <li><a class="navbar-link" href="#about-me">About me</a></li>
         <li><a class="navbar-link" href="#skills">Skills</a></li>
@@ -81,7 +82,7 @@
       </ul>
     </nav>
   </header>
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="weather">
       <ul class="weather-info">
         <li>
@@ -249,7 +250,7 @@
       <div class="reference-div">
         <em class="reference-text" id="reference-text"></em>
         <div class="reference-person">
-          <h4 id="reference-person"></h4>
+          <h3 id="reference-person"></h3>
           <p class="reference-company" id="reference-company"></p>
         </div>
       </div>
