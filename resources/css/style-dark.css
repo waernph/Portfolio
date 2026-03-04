@@ -121,14 +121,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 3%;
     list-style: none;
 }
 
 .case-card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2.5%;
+
 }
 
 .case-image {
