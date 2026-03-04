@@ -36,7 +36,6 @@
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
     <div class="form-content">
-
       <input type="email" name="email" placeholder="email">
       <textarea name="message" id="message" rows="8" placeholder="message"></textarea>
       <button type="submit" name="send-message" id="send-message">Send</button>
@@ -44,7 +43,7 @@
     </div>
 
   </section>
-  <section class="menu-modal blur" id="menu-modal">
+  <section class="menu-modal" id="menu-modal">
     <ul class="navbar-link-modal-ul">
       <li><a class="navbar-link-modal" href="#about-me">About me</a></li>
       <li><a class="navbar-link-modal" href="#skills">Skills</a></li>
@@ -57,7 +56,7 @@
     <!-- navbar -->
     <nav class="navbar">
       <a class="logo" href="#"><img src="/resources/media/logos/danish_ae.svg" alt="A danish ä"></a>
-      <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+      <button class="menu-button" id="menu-button"><i class="fa-solid fa-bars"></i></button>
       <ul class="navbar-ul">
         <li><a class="navbar-link" href="#about-me">About me</a></li>
         <li><a class="navbar-link" href="#skills">Skills</a></li>
@@ -200,7 +199,7 @@
     </section>
     <section id="portfolio" class="case-section">
       <h2>Portfolio</h2>
-      <!-- Inledande text kring case -->
+      <!-- Inledande text kring case? -->
       <ul class="case-list">
         <li class="case-card">
           <h3>Bank API</h3>
@@ -210,7 +209,7 @@
             JWT for autharization and authentication, AutoMapper Swagger
           </p>
           <a class="case-btn" href="https://github.com/waernph/BankOfWaern.git" target="_blank"
-            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
+            aria-label="Link to GitHub"><span>Visit on </span><i class="fa-brands fa-github"></i></a>
         </li>
         <li class="case-card">
           <h3>BrewHub</h3>
@@ -219,7 +218,7 @@
           <p>An assignment to build an API for a forum. Some of the techiques used are Entity Framework, Controllers,
             JWT for autharization and authentication, AutoMapper Swagger</p>
           <a class="case-btn" href="https://github.com/waernph/BrewHub.git" target="_blank"
-            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
+            aria-label="Link to GitHub"><span>Visit on </span><i class="fa-brands fa-github"></i></a>
         </li>
 
         <li class="case-card">
@@ -229,7 +228,7 @@
           <p>A group assignment during the course C#/.NET, Basics where we developed a contact book using Avalonia and
             saved to a json-file.</p>
           <a class="case-btn" href="https://github.com/waernph/kontaktbok.git" target="_blank"
-            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
+            aria-label="Link to GitHub"><span>Visit on </span><i class="fa-brands fa-github"></i></a>
         </li>
         <li class="case-card">
           <h3>Shotgun</h3>
@@ -237,7 +236,7 @@
               src="/resources/media/graphics/case-placeholder.png" alt="img of case"></a>
           <p>A console game developed as a examination project during the course C#/.NET, Basics</p>
           <a class="case-btn" href="https://github.com/waernph/shotgun3.git" target="_blank"
-            aria-label="Link to GitHub"><i class="fa-brands fa-github"></i></a>
+            aria-label="Link to GitHub"><span>Visit on </span><i class="fa-brands fa-github"></i></a>
         </li>
       </ul>
     </section>

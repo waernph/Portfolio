@@ -1,5 +1,15 @@
 @media (max-width: 400px) {
 
+    /* CONTACT MODAL */
+    .modal {
+        padding: 15px;
+        width: 100vw;
+        margin: 5px;
+    }
+
+    /* CONTACT MODAL */
+
+
     /* NAVBAR */
     .navbar-ul {
         display: none;
@@ -10,7 +20,7 @@
     }
 
     .menu-button {
-        display: block;
+        display: flex;
     }
 
     .nav-button {
@@ -36,8 +46,13 @@
         margin-right: 2%;
     }
 
+
     /* HERO */
     /* ------------------------------------------------ */
+
+    h2 {
+        text-align: center;
+    }
 
     /* ABOUT ME */
     .content-about-me video {
@@ -52,6 +67,10 @@
         width: 100%;
     }
 
+    #about-me {
+        scroll-margin-top: 80px;
+    }
+
     /* ABOUT ME */
     /* ------------------------------------------------ */
     /* SKILLS */
@@ -59,18 +78,27 @@
     .logos {
         flex-direction: column;
         align-items: center;
+
     }
 
     .logos li img {
-        height: auto;
-        width: 50px;
+
+        width: 60px;
         margin-right: 0px;
     }
 
     .logos li {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
+    }
+
+    .skill-list {
+        margin-top: 30px;
+    }
+
+    #skills {
+        scroll-margin-top: 80px;
     }
 
     /* SKILLS */
@@ -92,6 +120,10 @@
         width: 100%;
     }
 
+    #portfolio {
+        scroll-margin-top: 80px;
+    }
+
     /* PORTFOLIO */
     /* ------------------------------------------------ */
 
@@ -109,6 +141,10 @@
         font-size: 1.4rem;
     }
 
+    #references {
+        scroll-margin-top: 80px;
+    }
+
     /* REFERENCES */
     /* ------------------------------------------------ */
 
@@ -119,9 +155,11 @@
         justify-content: center;
         align-items: center;
     }
+
     .footer-list {
         flex-direction: column-reverse;
     }
+
     .footer-list li a {
         font-size: 2rem;
     }
