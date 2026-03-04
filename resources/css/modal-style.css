@@ -24,9 +24,6 @@
     margin-bottom: 15px;
 }
 
-.close-modal-button {
-    transition: all 0.3s ease-in-out;
-}
 
 .close-modal-button:hover {
     rotate: 90deg;
@@ -47,34 +44,43 @@
     margin-top: 15px;
     border-radius: 5px;
     border: var(--light-color) 0px none;
-    background-color: var(--highlight);
+    background-color: var(--light-color);
+    color: var(--bg-color);
+    font-weight: 600;
     font-family: "Orbitron", sans-serif;
     padding: 10px;
 }
-
-.close-modal-button {
-    background-color: transparent;
-    border: transparent;
-    color: var(--light-color);
+.form-content button:hover {
+    cursor: pointer;
 }
+
+
 
 .close-modal-button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
-
+    background-color: transparent;
+    border: transparent;
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .form-content input {
     font-family: "Nunito", sans-serif;
     margin-bottom: 7px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
 }
+
 
 .form-content textarea {
     font-family: "Nunito", sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
 }
 
  

@@ -35,12 +35,16 @@
           class="fa-solid fa-xmark"></i></button>
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
-    <div class="form-content">
-      <input type="email" name="email" placeholder="email">
-      <textarea name="message" id="message" rows="8" placeholder="message"></textarea>
-      <button type="submit" name="send-message" id="send-message">Send</button>
+    <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank"
+      class="form-content">
+      <input required type="email" name="email" placeholder="email">
+      <textarea required name="message" id="message" rows="8" placeholder="message"></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit" name="send-message" id="send-message">
+        <p>Send</p>
+      </button>
       <label for="send-message" hidden>Button to send message</label>
-    </div>
+    </form>
 
   </section>
   <section class="menu-modal" id="menu-modal">
