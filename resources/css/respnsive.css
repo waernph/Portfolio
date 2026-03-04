@@ -56,9 +56,21 @@
 
     /* ABOUT ME */
     /* ------------------------------------------------ */
-
+    /* SKILLS */
 
     .logos {
         flex-direction: column;
+        align-items: center;
+    }
+    .logos li img {
+        height: auto;
+        width: 50px;
+        margin-right: 0px;
+    }
+    .logos li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
     }
 }
