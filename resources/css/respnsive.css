@@ -23,10 +23,6 @@
 
     /* HERO */
 
-    .reference-text {
-        font-size: 1.5rem;
-    }
-
     h1 {
         font-size: 2rem;
     }
@@ -99,4 +95,27 @@
     /* PORTFOLIO */
     /* ------------------------------------------------ */
 
+    /* REFERENCES */
+    .references {
+        height: 40vh;
+        justify-content: space-between;
+    }
+    .reference-div {
+        margin-top: 7vh;
+    }
+
+    .reference-text {
+        font-size: 1.4rem;
+    }
+
+    /* REFERENCES */
+    /* ------------------------------------------------ */
+
+    /* FOOTER */
+    .footer {
+        height: 10vh;
+        font-size: 1rem;
+        padding: 0px;
+
+    }
 }
