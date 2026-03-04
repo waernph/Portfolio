@@ -100,6 +100,7 @@
         height: 40vh;
         justify-content: space-between;
     }
+
     .reference-div {
         margin-top: 7vh;
     }
@@ -112,10 +113,17 @@
     /* ------------------------------------------------ */
 
     /* FOOTER */
-    .footer {
-        height: 10vh;
-        font-size: 1rem;
-        padding: 0px;
-
+    footer {
+        font-size: 1.2rem;
+        height: 12vh;
+        justify-content: center;
+        align-items: center;
     }
+    .footer-list {
+        flex-direction: column-reverse;
+    }
+    .footer-list li a {
+        font-size: 2rem;
+    }
+
 }
