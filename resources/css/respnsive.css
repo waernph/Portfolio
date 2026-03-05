@@ -171,6 +171,9 @@
 
 
 @media (min-width: 401px) and (max-width: 930px) {
+    main {
+        gap: 10vh;
+    }
     .menu-modal a {
         text-decoration: none;
     }
@@ -218,6 +221,10 @@
 
     h1 {
         font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .hero {
+        height: 100vh;
     }
 
     .tag-line {
@@ -236,7 +243,10 @@
 
     /* HERO */
     /* ------------------------------------------------ */
-
+    main h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
     h2 {
         text-align: center;
     }

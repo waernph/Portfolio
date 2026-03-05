@@ -4,6 +4,9 @@
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -16,6 +19,7 @@ main h2 {
     margin-bottom: var(--main-margin-bottom);
     text-decoration: underline;
     text-underline-offset: 7px;
+    margin-bottom: 1.5rem;
 }
 
 main h3 {

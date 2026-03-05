@@ -67,7 +67,6 @@ body {
     flex-direction: column;
     width: 100px;
     margin-top: 15px;
-    margin-bottom: 30px;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: var(--light-color);
@@ -82,9 +81,6 @@ body {
     padding-left: 10px;
 }
 
-.about-me {
-    margin-top: 30px;
-}
 
 .content-about-me {
     display: flex;
