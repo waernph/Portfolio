@@ -35,8 +35,7 @@
           class="fa-solid fa-xmark"></i></button>
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
-    <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank"
-      class="form-content">
+    <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank" class="form-content">
       <input required autocomplete="email" type="email" name="email" placeholder="email">
       <textarea required autocomplete="name" name="message" id="message" rows="8" placeholder="message"></textarea>
       <input type="hidden" name="_captcha" value="false">
@@ -110,7 +109,7 @@
     <section class="about-me" id="about-me">
       <h2>About me</h2>
       <div class="content-about-me">
-        <video autoplay muted loop>
+        <video autoplay muted loop playsinline> <!--  playsinline prevents video from popping up on ios -->
           <source src="/resources/media/motion/Profilepic.webm" />
         </video>
         <article class="about-me-text">
