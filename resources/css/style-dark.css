@@ -171,14 +171,14 @@ body {
 }
 
 .references {
-    margin-top: 30px;
-    height: 80vh;
+    margin-top: 80px;
+    height: 60vh;
 }
 .reference-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .reference-text {
     font-family: "Nunito", sans-serif;
@@ -195,14 +195,17 @@ body {
 .reference-person {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    margin-top: 5%;
-    font-family: "Orbitron", sans-serif;
-    font-size: 1.2rem;
+    align-items: end;    
     color: var(--light-color);
 }
-.reference-person p{
+.reference-person h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+.reference-company{
     width: auto;
+    font-family: "Nunito", sans-serif;
     margin: 0px;
 }
 

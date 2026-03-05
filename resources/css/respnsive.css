@@ -128,16 +128,18 @@
     /* ------------------------------------------------ */
 
     /* REFERENCES */
-    .references {
-        height: 40vh;
-        justify-content: space-between;
-    }
 
-    .reference-div {
-        margin-top: 7vh;
+    .references {
+        margin-top: 50px;
+        height: 45vh;
+
+    }
+    .references-person h3 {
+        font-size: 1.2rem;
     }
 
     .reference-text {
+        margin-top: 5vh;
         font-size: 1.4rem;
     }
 
@@ -168,12 +170,16 @@
 
 
 @media (min-width: 401px) and (max-width: 930px) {
+    .menu-modal a {
+        text-decoration: none;
+        -webkit-text-fill-color: var(--light-color); /* För att det ska se bra ut i iOS */
+    }
 
     /* CONTACT MODAL */
     .modal {
         padding: 15px;
-        width: 50vw;
-        margin: 5px;
+        width: 100vw;
+        margin: 0px;
     }
 
     /* CONTACT MODAL */
@@ -184,6 +190,7 @@
         display: none;
     }
 
+
     .logo {
         display: none;
     }
@@ -193,7 +200,7 @@
     }
 
     .nav-button {
-        width: 100px;
+        width: 80px;
     }
 
     /* NAVBAR */
@@ -295,16 +302,20 @@
 
     /* REFERENCES */
     .references {
-        height: 40vh;
+        height: 50vh;
+        margin-top: 50px;
         justify-content: space-between;
     }
 
     .reference-div {
-        margin-top: 7vh;
+        margin-top: 4vh;
     }
 
     .reference-text {
         font-size: 1.4rem;
+    }
+    .reference-person h3 {
+        font-size: 1.5rem;
     }
 
     #references {

@@ -99,7 +99,8 @@ header {
 }
 
 .navbar-link,
-.navbar-link:visited {
+.navbar-link:visited{
+
     font-family: "Orbitron";
     text-align: center;
     font-size: 20;
