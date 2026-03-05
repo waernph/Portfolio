@@ -173,7 +173,6 @@
 @media (min-width: 401px) and (max-width: 930px) {
     .menu-modal a {
         text-decoration: none;
-        
     }
 
     /* CONTACT MODAL */
@@ -198,10 +197,17 @@
 
     .menu-button {
         display: flex;
+        justify-content: start;
+
     }
 
     .nav-button {
-        width: 80px;
+        width: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .buttons-list {
+        gap: 10px;
     }
 
     /* NAVBAR */
@@ -221,6 +227,10 @@
         text-align: center;
         margin-left: 2%;
         margin-right: 2%;
+    }
+    .weather-info {
+        justify-content: space-between;
+        gap: 10px;
     }
 
 
