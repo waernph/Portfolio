@@ -134,6 +134,7 @@
         height: 45vh;
 
     }
+
     .references-person h3 {
         font-size: 1.2rem;
     }
@@ -172,7 +173,7 @@
 @media (min-width: 401px) and (max-width: 930px) {
     .menu-modal a {
         text-decoration: none;
-        -webkit-text-fill-color: var(--light-color); /* För att det ska se bra ut i iOS */
+        
     }
 
     /* CONTACT MODAL */
@@ -234,6 +235,7 @@
     .content-about-me {
         justify-content: center;
     }
+
     .content-about-me video {
         width: 80%
     }
@@ -292,6 +294,7 @@
         gap: 20%;
 
     }
+
     .case-btn {
         margin-bottom: 10%;
     }
@@ -314,6 +317,7 @@
     .reference-text {
         font-size: 1.4rem;
     }
+
     .reference-person h3 {
         font-size: 1.5rem;
     }

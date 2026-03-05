@@ -103,6 +103,10 @@
     backdrop-filter: blur(10px) brightness(0.5);
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.menu-modal a {
+    -webkit-text-fill-color: var(--light-color);
+        /* För att det ska se bra ut i iOS */
+}
 
 .menu-modal ul {
     gap: 25px;
