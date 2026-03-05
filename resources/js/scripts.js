@@ -31,20 +31,16 @@ tagLine();
 
 //Fetch weather data with input default set to Göteborg
 async function weather(cityId = 2711533) {
-
     const apiKey = "69ec97f7b99ef917a294c46362d91722";
     let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`;
     const response = await fetch(endpoint)
     const result = await response.json();
 
-
     const temperatureC = (Math.round(result.main.temp) + "°C");
     const weather = result.weather[0].description;
     const icon = result.weather[0].icon;
-    document.getElementById("temperature").innerText = temperatureC;
-    document.getElementById("weather-condition").innerText = weather;
-
-
+    document.querySelector("#temperature").innerText = temperatureC;
+    document.querySelector("#weather-condition").innerText = weather;
 }
 weather();
 //Fetch weather data with input default set to Göteborg
@@ -65,6 +61,9 @@ function openModalWindow() {
     contactForm.style.opacity = "1";
     contactForm.style.top = "70px";
     modalIsOpen = true;
+    if (menuIsOpen) {
+        closeMenu();
+    }
 }
 
 const closeContactFormButton = document.querySelector("#close-modal-button");
@@ -208,6 +207,9 @@ function openMenu() {
     menuModal.style.opacity = "1";
     menuModal.style.top = "60px";
     menuIsOpen = true;
+    if (modalIsOpen) {
+        closeModalWindow();
+    }
 }
 function closeMenu() {
     menuModal.style.opacity = "0";
@@ -222,7 +224,7 @@ for (let i = 0; i < navbarLinkModal.length; i++) {
 }
 
 const sendButton = document.querySelector("#send-message");
-sendButton.addEventListener("click", function() {
+sendButton.addEventListener("click", function () {
     sendButton.style.backgroundColor = "var(--highlight)"
     sendButton.innerText = "Email sent!";
 })

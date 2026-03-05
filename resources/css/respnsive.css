@@ -68,7 +68,7 @@
     }
 
     #about-me {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 60px;
     }
 
     /* ABOUT ME */
@@ -98,7 +98,7 @@
     }
 
     #skills {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 60px;
     }
 
     /* SKILLS */
@@ -121,7 +121,7 @@
     }
 
     #portfolio {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 60px;
     }
 
     /* PORTFOLIO */
@@ -145,7 +145,7 @@
     }
 
     #references {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 60px;
     }
 
     /* REFERENCES */
@@ -176,6 +176,7 @@
     }
     .menu-modal a {
         text-decoration: none;
+        right: 0px;
     }
 
     /* CONTACT MODAL */
@@ -210,7 +211,7 @@
         padding-right: 15px;
     }
     .buttons-list {
-        gap: 10px;
+        gap: 15px;
     }
 
     /* NAVBAR */

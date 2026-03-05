@@ -50,6 +50,7 @@
     font-family: "Orbitron", sans-serif;
     padding: 10px;
 }
+
 .form-content button:hover {
     cursor: pointer;
 }
@@ -83,19 +84,16 @@
     border-style: none;
 }
 
- 
+
 
 /* MODAL MENU */
 .menu-modal {
     opacity: 0%;
-    display: flex;
-    flex-direction: column;
-
     width: 100vw;
     position: fixed;
     z-index: 99;
     left: 0px;
-    padding: 30px;
+    padding: 5%;
     border-radius: 5px;
     top: -300px;
     font-family: "Orbitron", sans-serif;
@@ -103,18 +101,22 @@
     backdrop-filter: blur(10px) brightness(0.5);
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .menu-modal a {
     -webkit-text-fill-color: var(--light-color);
-        /* För att det ska se bra ut i iOS */
+    /* För att det ska se bra ut i iOS */
+    text-decoration: none;
 }
 
-.menu-modal ul {
+.navbar-link-modal-ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     gap: 25px;
 }
 
 .menu-modal li {
     list-style: none;
-    margin-top: 2rem;
     font-size: 1.7rem;
 }
 
