@@ -38,7 +38,6 @@ async function weather(cityId = 2711533) {
 
     const temperatureC = (Math.round(result.main.temp) + "°C");
     const weather = result.weather[0].description;
-    const icon = result.weather[0].icon;
     document.querySelector("#temperature").innerText = temperatureC;
     document.querySelector("#weather-condition").innerText = weather;
 }
@@ -46,7 +45,7 @@ weather();
 //Fetch weather data with input default set to Göteborg
 
 //Get set value to weather() from list
-const cityList = document.getElementById("city");
+const cityList = document.querySelector("#city");
 
 function updateWeather() {
     weather(cityList.value)
