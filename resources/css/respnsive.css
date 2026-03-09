@@ -2,9 +2,8 @@
 
     /* CONTACT MODAL */
     .modal {
-        padding: 15px;
         width: 100vw;
-        margin: 5px;
+        padding: 5%;
     }
 
     /* CONTACT MODAL */
@@ -44,6 +43,13 @@
         text-align: center;
         margin-left: 2%;
         margin-right: 2%;
+    }
+    .weather {
+        margin-right: 5%;
+    }
+    .weather-info {
+        display: flex;
+        justify-content: space-between;
     }
 
 
@@ -174,17 +180,23 @@
     main {
         gap: 10vh;
     }
+
     .menu-modal a {
         text-decoration: none;
         right: 0px;
     }
 
+    .menu-modal a:hover {
+        color: var(--highligth);
+    }
+
     /* CONTACT MODAL */
     .modal {
-        padding: 15px;
+        left: 0px;
         width: 100vw;
-        margin: 0px;
+
     }
+
 
     /* CONTACT MODAL */
 
@@ -209,6 +221,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .buttons-list {
         gap: 15px;
     }
@@ -223,6 +236,7 @@
         font-size: 2rem;
         margin-top: 2rem;
     }
+
     .hero {
         height: 100vh;
     }
@@ -235,6 +249,7 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+
     .weather-info {
         justify-content: space-between;
         gap: 10px;
@@ -247,6 +262,7 @@
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+
     h2 {
         text-align: center;
     }

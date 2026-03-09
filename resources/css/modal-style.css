@@ -9,12 +9,12 @@
     z-index: 99;
     right: 0px;
     top: 0px;
-    padding: 30px;
+    padding: 5%;
     border-radius: 5px;
     top: -300px;
     font-family: "Orbitron", sans-serif;
     color: var(--light-color);
-    backdrop-filter: blur(10px) brightness(0.8);
+    backdrop-filter: blur(10px) brightness(0.5);
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
