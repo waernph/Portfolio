@@ -18,22 +18,22 @@ För att kontakta mig genom via sidan klickar användaren på knappen "Contact m
 
 En modal används även som meny vid smalare skärm, som t.ex. mobil.
 
-### JavaScript
+## JavaScript
 Nedan listas funktioner där JavaScript(JS)används per sektion
 
-#### Header
+### Header
 För att flytta och visa modalen för kontaktformuläret används JS för att ändra styling på modalen, samt sätta boolean med namnet modalIsOpen till true. Detta för att kunna stänga kontaktformuläret om menyn i mobil-läge öppnas. Samma sak gäller modalen för menyn, men då med variabeln menuIsOpen. Menyn stängs även när du klickar på någon av dess länkar.
 
 För att ändra tema(mörk/ljus) används också JS för att ändra värden på variabler i colors.css samt loggor för att de ska urskiljas bättre mot bakgrunden.
 
-#### Hero
+### Hero
 JS används för att loopa igenom en array av taglines i hero. Loopen sköts med en setIntervall med 4 sekunders intervall. När index i setIntervall når längd av array sätts index till 0. Detta för att enkelt kunna fylla på fler tag lines vid behov. Eventuellt kommer det ändras till att slumpas fram.
 
 För att hämta väder används en asynkron metod och fetch för att hämta och presentera väder. Temperaturen avrundas med Math.round(). För att enkelt kunna välja stad används cityId i endpoint och det fås från en rullista(select). Eventuellt kommer även möjligheten att hämta sin plats genom att aktivt trycka på en "pil" implementeras längre fram.
 
-#### Main
+### Main
 Här används JS för att presentera referenser med citat. Det liknar sättet att hämta tag line, men nu används en dictionary för att enkelt hämta namn, text och företag med hjälp av index. Det gör det också väldigt enkelt att uppdatera med nya referenser.
 
-#### Footer
+### Footer
 JS används för att uppdatera år så att jag slipper ha det hårdkodat.
 
