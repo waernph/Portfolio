@@ -105,6 +105,7 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 8%;
+    z-index: 50;
 }
 .hero-logo {
     height: 35vh;

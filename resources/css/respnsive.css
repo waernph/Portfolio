@@ -38,11 +38,11 @@
 
     .tag-line {
         position: absolute;
-        bottom: 17%;
+        top: 79%;
         font-size: 1rem;
         text-align: center;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .weather {
@@ -245,11 +245,12 @@
 
     .tag-line {
         position: absolute;
-        bottom: 17%;
+        top: 76%;
         font-size: 1rem;
         text-align: center;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+
     }
 
     .weather-info {
@@ -275,11 +276,11 @@
     }
 
     .content-about-me video {
-        width: 80%
+        width: 100%
     }
 
     .about-me-text {
-        width: 80%;
+        width: 100%;
         margin-right: 0px;
     }
 
@@ -327,14 +328,21 @@
 
     /* PORTFOLIO */
     .case-list {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        gap: 20%;
+        align-items: center;
+        gap: 2vh;
 
     }
 
     .case-btn {
         margin-bottom: 10%;
+    }
+    .case-image {
+        width: 99%;
+    }
+    .case-card p {
+        width: 99%;
     }
 
 
