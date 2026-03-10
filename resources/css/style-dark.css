@@ -50,20 +50,21 @@ body {
 .logos {
     list-style: none;
     display: flex;
+    gap: 5%;
     justify-content: space-between;
+    align-items: start;
     padding-top: var(--main-margin-top);
     flex-wrap: wrap;
 }
 
 .logos li img {
     height: 100px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     list-style: none;
 }
 
 .skill-list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     width: 100px;
     margin-top: 15px;
@@ -136,6 +137,10 @@ body {
     display: flex;
     width: 250px;
     border-left: var(--highlight) 3px solid;
+}
+.case-btn-section {
+    display: flex;
+    gap: 3%;
 }
 .case-btn{
     text-align: center;
