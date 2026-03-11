@@ -72,6 +72,8 @@ function closeModalWindow() {
     modalIsOpen = false;
 }
 
+
+
 const modalButton = document.querySelector("#button-open-modal");
 closeContactFormButton.addEventListener("click", closeModalWindow);
 
