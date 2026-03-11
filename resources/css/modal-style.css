@@ -24,11 +24,6 @@
     margin-bottom: 15px;
 }
 
-
-.close-modal-button:hover {
-    rotate: 90deg;
-}
-
 .form-content {
     display: flex;
     flex-direction: column;
@@ -45,14 +40,19 @@
     border-radius: 5px;
     border: var(--light-color) 0px none;
     background-color: var(--light-color);
+    padding: 10px;
+    transition: all, 0.3s ease-in-out;
+}
+
+.form-content button p {
     color: var(--bg-color);
     font-weight: 600;
     font-family: "Orbitron", sans-serif;
-    padding: 10px;
 }
 
 .form-content button:hover {
     cursor: pointer;
+    background-color: var(--highlight);
 }
 
 
@@ -67,6 +67,11 @@
     color: var(--light-color);
     transition: all 0.3s ease-in-out;
 }
+.close-modal-button:hover {
+    cursor: pointer;
+    rotate: 90deg;
+}
+
 
 .form-content input {
     font-family: "Nunito", sans-serif;

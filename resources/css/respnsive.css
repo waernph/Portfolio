@@ -138,7 +138,7 @@
     /* REFERENCES */
 
     .references {
-        margin-top: 50px;
+        margin-top: 0px;
         height: 45vh;
 
     }
@@ -148,7 +148,7 @@
     }
 
     .reference-text {
-        margin-top: 5vh;
+        text-align: center;
         font-size: 1.4rem;
     }
 
@@ -352,7 +352,7 @@
     /* REFERENCES */
     .references {
         height: 50vh;
-        margin-top: 50px;
+        margin-top: 0px;
         justify-content: space-between;
     }
 
@@ -361,7 +361,8 @@
     }
 
     .reference-text {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        text-align: center;
     }
 
     .reference-person h3 {
