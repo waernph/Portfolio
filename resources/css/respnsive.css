@@ -178,7 +178,7 @@
 }
 
 
-@media (min-width: 401px) and (max-width: 930px) {
+@media (min-width: 401px) and (max-width: 1024px) {
     main {
         gap: 10vh;
     }
@@ -235,7 +235,7 @@
     /* HERO */
 
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 2rem;
     }
 
@@ -246,7 +246,7 @@
     .tag-line {
         position: absolute;
         top: 76%;
-        font-size: 1rem;
+        font-size: 1.6rem;
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
@@ -265,22 +265,28 @@
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+    main p {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
 
     h2 {
         text-align: center;
     }
 
+
     /* ABOUT ME */
     .content-about-me {
         justify-content: center;
+        gap: 3vh;
     }
 
     .content-about-me video {
-        width: 100%
+        width: 80%;
     }
 
     .about-me-text {
-        width: 100%;
+        width: 80%;
         margin-right: 0px;
     }
 
@@ -298,9 +304,10 @@
 
     .logos {
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         justify-content: space-around;
         gap: 10%;
+
     }
 
     .logos li img {
@@ -311,12 +318,12 @@
 
     .logos li {
         display: flex;
-        align-items: center;
+        align-items: start;
         gap: 30px;
     }
 
     .skill-list {
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #skills {

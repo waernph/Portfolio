@@ -21,7 +21,7 @@
 :root {
     --margin-left: 10%;
     --margin-right: 10%;
-
+    --scroll-margin-top: 80px;
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
     --main-margin-top: 25px;
@@ -53,8 +53,13 @@ body {
     gap: 5%;
     justify-content: space-between;
     align-items: start;
-    padding-top: var(--main-margin-top);
     flex-wrap: wrap;
+}
+.logos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 
 .logos li img {
@@ -66,7 +71,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin-top: 15px;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: var(--light-color);
@@ -84,8 +88,8 @@ body {
 
 .content-about-me {
     display: flex;
+    justify-content: space-between;
     align-items: start;
-    gap: 10vh;
     flex-wrap: wrap;
 }
 
@@ -100,7 +104,7 @@ body {
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     border-left: var(--highlight) 3px solid;
-    margin-right: auto
+    
 }
 
 .about-me-text p {
@@ -129,6 +133,7 @@ body {
 
 .case-image {
     width: 250px;
+    border-radius: 5px;
 }
 
 .case-card p {
@@ -212,18 +217,18 @@ body {
 
 
 #about-me {
-    scroll-margin-top: 60px;
+    scroll-margin-top: var(--scroll-margin-top);
 }
 
 
 #portfolio {
-    scroll-margin-top: 60px;
+    scroll-margin-top: var(--scroll-margin-top);
 }
 
 #skills {
-    scroll-margin-top: 60px;
+    scroll-margin-top: var(--scroll-margin-top);
 }
 
 #references {
-    scroll-margin-top: 60px;
+    scroll-margin-top: var(--scroll-margin-top);
 }
