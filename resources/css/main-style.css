@@ -36,7 +36,6 @@ main p {
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: var(--light-color);
-    width: 5px;
     height: 100%;
     width: 50vw;
     padding-left: 10px;

@@ -91,7 +91,7 @@ let isDarkTheme = true;
 function lightMode() {
     document.documentElement.style.setProperty("--bg-color", "#FCF8EC");
     document.documentElement.style.setProperty("--light-color", "#1B3C53");
-    document.documentElement.style.setProperty("--highlight", "#1B3C53");
+    document.documentElement.style.setProperty("--highlight", "#78B9B5");
     document.documentElement.style.setProperty("--hero-color-one", "#39e950");
     document.documentElement.style.setProperty("--hero-color-two", "#af73a3");
 
@@ -121,10 +121,12 @@ function darkMode() {
 themeSwitch.addEventListener("click", function () {
     if (isDarkTheme) {
         lightMode();
+        document.querySelector(".theme-button").innerHTML = '<i class="fa-regular fa-moon" ></i > ';
         isDarkTheme = false;
     }
     else {
         darkMode();
+        document.querySelector(".theme-button").innerHTML = '<i class="fa-regular fa-sun" ></i > ';
         isDarkTheme = true;
     }
     console.log(isDarkTheme);

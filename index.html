@@ -36,11 +36,11 @@
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
     <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank" class="form-content">
-      <input required autocomplete="name" type="text" name="name" placeholder="name">
-      <input required autocomplete="email" type="email" name="email" placeholder="email">
-      <textarea required name="message" id="message" rows="8" placeholder="message"></textarea>
+      <input required autocomplete="name" type="text" name="name" placeholder="Name" class="contact-input">
+      <input required autocomplete="email" type="email" name="email" placeholder="Email" class="contact-input">
+      <textarea required name="message" id="message" rows="8" placeholder="Message"></textarea>
       <input type="hidden" name="_captcha" value="false">
-      <button type="submit" name="send-message" id="send-message">
+      <button type="submit" name="send-message" id="send-message" class="send-button">
         <p>Send</p>
       </button>
       <label for="send-message" hidden>Button to send message</label>
@@ -72,7 +72,7 @@
       <ul class="buttons-list">
         <li>
           <button type="button" name="theme-button" id="theme-button" class="theme-button"><i
-              class="fa-regular fa-lightbulb"></i></button>
+              class="fa-regular fa-sun"></i></button>
           <label for="theme-button" hidden>Button to toggle theme</label>
         </li>
         <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button

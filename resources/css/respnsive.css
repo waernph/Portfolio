@@ -33,7 +33,7 @@
     /* HERO */
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .tag-line {
@@ -63,11 +63,17 @@
     }
 
     /* ABOUT ME */
+    .content-about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .content-about-me video {
         width: 100%
     }
 
     .about-me-text {
+        margin-top: 10%;
         margin-right: 0px;
     }
 
@@ -86,6 +92,7 @@
     .logos {
         flex-direction: column;
         align-items: center;
+        justify-content: start;
 
     }
 
@@ -97,12 +104,12 @@
 
     .logos li {
         display: flex;
-        align-items: center;
+        align-items: start;
         gap: 30px;
     }
 
     .skill-list {
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #skills {
@@ -189,14 +196,23 @@
     }
 
     .menu-modal a:hover {
-        color: var(--highligth);
+        color: var(--highlight);
     }
 
     /* CONTACT MODAL */
     .modal {
-        left: 0px;
-        width: 100vw;
-
+        right: 0px;
+        width: 50vw;
+    }
+    .contact-input {
+        font-size: 1.3rem;
+    }
+    .send-button{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .send-button p {
+        font-size: 1.5rem;
     }
 
 
@@ -222,10 +238,11 @@
         width: 100px;
         padding-left: 15px;
         padding-right: 15px;
+        font-weight: 700;
     }
 
     .buttons-list {
-        gap: 15px;
+        gap: 30px;
     }
 
     /* NAVBAR */
@@ -235,7 +252,7 @@
     /* HERO */
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 2rem;
     }
 
@@ -246,7 +263,7 @@
     .tag-line {
         position: absolute;
         top: 76%;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
@@ -305,8 +322,8 @@
     .logos {
         flex-direction: row;
         align-items: start;
-        justify-content: space-around;
-        gap: 10%;
+        justify-content: center;
+        gap: 12%;
 
     }
 
