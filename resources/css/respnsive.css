@@ -185,7 +185,7 @@
 }
 
 
-@media (min-width: 401px) and (max-width: 1024px) {
+@media (min-width: 401px) and (max-width: 819px) {
     main {
         gap: 10vh;
     }
@@ -213,6 +213,9 @@
     }
     .send-button p {
         font-size: 1.5rem;
+    }
+    .form-content textarea {
+        font-size: 1.3rem;
     }
 
 
@@ -252,7 +255,8 @@
     /* HERO */
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
+        
         margin-top: 2rem;
     }
 
@@ -290,6 +294,9 @@
     h2 {
         text-align: center;
     }
+    h3 {
+        font-size: 2rem;
+    }
 
 
     /* ABOUT ME */
@@ -322,7 +329,7 @@
     .logos {
         flex-direction: row;
         align-items: start;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 12%;
 
     }
@@ -415,6 +422,263 @@
 
     .footer-list li a {
         font-size: 1.5rem;
+    }
+
+}
+@media (min-width: 820px) and (max-width: 1030px) {
+    main {
+        gap: 10vh;
+    }
+
+    .menu-modal a {
+        text-decoration: none;
+        right: 0px;
+    }
+
+    .menu-modal a:hover {
+        color: var(--highlight);
+    }
+
+    /* CONTACT MODAL */
+    .modal {
+        right: 0px;
+        width: 50vw;
+    }
+    .contact-input {
+        font-size: 1.3rem;
+    }
+    .send-button{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .send-button p {
+        font-size: 1.5rem;
+    }
+    .form-content textarea {
+        font-size: 1.3rem;
+    }
+
+
+    /* CONTACT MODAL */
+
+
+    /* NAVBAR */
+    .navbar-ul {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .nav-button {
+        width: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 700;
+    }
+
+    .buttons-list {
+        gap: 30px;
+    }
+
+    /* NAVBAR */
+
+    /* ------------------------------------------------ */
+
+    /* HERO */
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .tag-line {
+        position: absolute;
+        top: 76%;
+        font-size: 1.4rem;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .weather-info {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .weather-info li {
+        font-size: 1.6rem;
+    }
+    .city-list {
+        font-size: 1.2rem;
+        font-weight: 600;
+        height: 40px;
+        width: 180px;
+    }
+    .city-list option {
+        font-size: 0.6rem;
+    }
+
+
+
+
+    /* HERO */
+    /* ------------------------------------------------ */
+    main h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    main p {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    /* ABOUT ME */
+    .content-about-me {
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .content-about-me video {
+        width: 80%;
+    }
+
+    .about-me-text {
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .about-me-text p {
+        width: 100%;
+    }
+
+    #about-me {
+        scroll-margin-top: 80px;
+    }
+
+    /* ABOUT ME */
+    /* ------------------------------------------------ */
+    /* SKILLS */
+
+    .logos {
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        gap: 12%;
+
+    }
+
+    .logos li img {
+
+        width: 60px;
+        margin-right: 0px;
+    }
+
+    .logos li {
+        display: flex;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .skill-list {
+        margin-bottom: 30px;
+    }
+
+    #skills {
+        scroll-margin-top: 80px;
+    }
+
+    /* SKILLS */
+    /* ------------------------------------------------ */
+
+    /* PORTFOLIO */
+    .case-list {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2vh;
+
+    }
+
+    .case-btn {
+        margin-bottom: 10%;
+        font-size: 2.5rem;
+    }
+    .case-btn span {
+        font-size: 1.7rem;
+    }
+    .case-image {
+        width: 99%;
+    }
+    .case-card p {
+        width: 99%;
+    }
+
+
+    /* PORTFOLIO */
+    /* ------------------------------------------------ */
+
+    /* REFERENCES */
+    .references {
+        height: 50vh;
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+
+    .reference-div {
+        margin-top: 4vh;
+    }
+
+    .reference-text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .reference-person h3 {
+        font-size: 1.5rem;
+    }
+
+    #references {
+        scroll-margin-top: 80px;
+    }
+
+    /* REFERENCES */
+    /* ------------------------------------------------ */
+
+    /* FOOTER */
+    footer {
+        font-size: 1.8rem;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-list {
+        flex-direction: column-reverse;
+    }
+
+
+    .footer-list li a {
+        font-size: 2rem;
     }
 
 }

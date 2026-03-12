@@ -121,12 +121,12 @@ function darkMode() {
 themeSwitch.addEventListener("click", function () {
     if (isDarkTheme) {
         lightMode();
-        document.querySelector(".theme-button").innerHTML = '<i class="fa-regular fa-moon" ></i > ';
+        document.querySelector(".theme-button").innerText = "☾";
         isDarkTheme = false;
     }
     else {
         darkMode();
-        document.querySelector(".theme-button").innerHTML = '<i class="fa-regular fa-sun" ></i > ';
+        document.querySelector(".theme-button").innerText = "☼";
         isDarkTheme = true;
     }
     console.log(isDarkTheme);

@@ -120,11 +120,13 @@ header {
 .theme-button {
     background-color: transparent;
     border: transparent;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--light-color);
     padding: 0px;
     transition: all 0.3s ease-in-out;
 }
+
 
 .theme-button:hover {
     cursor: pointer;
