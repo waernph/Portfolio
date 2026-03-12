@@ -25,15 +25,15 @@ h1{
 
 @keyframes logo-p {
     0% {
-        opacity: 0%;
+        opacity: 0;
     }
 
     50% {
-        opacity: 0%;
+        opacity: 0;
     }
 
     100% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -67,37 +67,37 @@ h1{
 
 @keyframes gradient-left {
     0% {
-        opacity: 0%;
+        opacity: 0;
     }
 
     50% {
-        opacity: 100%;
+        opacity: 1;
     }
 
     100% {
-        opacity: 0%;
+        opacity: 0;
     }
 }
 
 @keyframes gradient-right {
     0% {
-        opacity: 60%;
+        opacity: 0.6;
     }
 
     25% {
-        opacity: 20%;
+        opacity: 0.2;
     }
 
     50% {
-        opacity: 100%;
+        opacity: 1;
     }
 
     75% {
-        opacity: 20%;
+        opacity: 0.2;
     }
 
     100% {
-        opacity: 60%;
+        opacity: 0.6;
     }
 }
 .logo-tag-line{

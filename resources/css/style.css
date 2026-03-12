@@ -21,7 +21,7 @@
 :root {
     --margin-left: 10%;
     --margin-right: 10%;
-
+    --scroll-margin-top: 120px;
     --header-padding-top: 20px;
     --header-padding-bottom: 10px;
     --main-margin-top: 25px;
@@ -33,16 +33,12 @@
 
 
 body {
-    /* background-color: #1B3C53; */
     background-color: var(--bg-color);
     transition: all 1s ease-in-out;
-
 }
 
 ::selection {
-    /* background-color: #78B9B5; */
     background-color: var(--highlight);
-    /* color: #1B3C53; */
     color: var(--bg-color);
 }
 
@@ -53,21 +49,24 @@ body {
     gap: 5%;
     justify-content: space-between;
     align-items: start;
-    padding-top: var(--main-margin-top);
     flex-wrap: wrap;
+}
+
+.logos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 
 .logos li img {
     height: 100px;
-    /* margin-right: 100px; */
-    list-style: none;
 }
 
 .skill-list {
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin-top: 15px;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: var(--light-color);
@@ -85,8 +84,8 @@ body {
 
 .content-about-me {
     display: flex;
+    justify-content: space-between;
     align-items: start;
-    gap: 10vh;
     flex-wrap: wrap;
 }
 
@@ -101,7 +100,6 @@ body {
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     border-left: var(--highlight) 3px solid;
-    margin-right: auto
 }
 
 .about-me-text p {
@@ -112,7 +110,6 @@ body {
 .case-section {
     display: flex;
     flex-direction: column;
-    /* margin-top: 30px; */
 }
 
 .case-list {
@@ -126,23 +123,34 @@ body {
 .case-card {
     display: flex;
     flex-direction: column;
-
+    border: var(--light-color) 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--extra-dark);
+    transition: all 0.3s ease-in-out;
 }
+.case-card:hover {
+    box-shadow: 0px 0px 10px var(--highlight);
+}
+
 
 .case-image {
     width: 250px;
+    border-radius: 5px;
 }
 
 .case-card p {
     display: flex;
     width: 250px;
-    border-left: var(--highlight) 3px solid;
+    /* border-left: var(--highlight) 3px solid; */
 }
+
 .case-btn-section {
     display: flex;
     gap: 3%;
 }
-.case-btn{
+
+.case-btn {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -159,14 +167,17 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
+
 .case-btn span {
 
     font-weight: 600;
     font-size: 1rem;
 }
+
 .case-btn:hover {
     background-color: var(--highlight);
 }
+
 .case-btn:visited {
     color: var(--bg-color);
 }
@@ -175,57 +186,51 @@ body {
     margin-top: 80px;
     height: 60vh;
 }
+
 .reference-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 3%;
 }
+
 .reference-text {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
     font-weight: 300;
     color: var(--light-color);
 }
-.reference-text::before{
+
+.reference-text::before {
     content: '"';
 }
-.reference-text::after{
+
+.reference-text::after {
     content: '"';
 }
+
 .reference-person {
     display: flex;
     flex-direction: column;
-    align-items: end;    
+    align-items: end;
     color: var(--light-color);
 }
+
 .reference-person h3 {
     font-family: "Orbitron", sans-serif;
     font-size: 1.8rem;
     margin-top: 3rem;
 }
-.reference-company{
+
+.reference-company {
     width: auto;
     font-family: "Nunito", sans-serif;
     margin: 0px;
 }
 
-
-
-
-#about-me {
-    scroll-margin-top: 60px;
-}
-
-
-#portfolio {
-    scroll-margin-top: 60px;
-}
-
-#skills {
-    scroll-margin-top: 60px;
-}
-
+#about-me,
+#portfolio,
+#skills,
 #references {
-    scroll-margin-top: 60px;
+    scroll-margin-top: var(--scroll-margin-top);
 }

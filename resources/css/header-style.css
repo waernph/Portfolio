@@ -100,11 +100,12 @@ header {
 }
 
 .navbar-link,
-.navbar-link:visited{
+.navbar-link:visited,
+.navbar-link:active{
 
-    font-family: "Orbitron";
+    font-family: "Orbitron", sans-serif;
     text-align: center;
-    font-size: 20;
+    font-size: 1.2rem;
     color: var(--light-color);
     border-bottom: transparent 3px solid;
     text-decoration: none;
@@ -116,19 +117,16 @@ header {
     border-bottom: var(--highlight) 3px solid;
 }
 
-
-.navbar-link:active {
-    font-family: "Orbitron";
-    font-size: 20;
-}
-
 .theme-button {
     background-color: transparent;
     border: transparent;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--light-color);
     padding: 0px;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .theme-button:hover {
     cursor: pointer;

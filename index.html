@@ -16,8 +16,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
   <link rel="stylesheet" href="/resources/css/reset.css" />
-  <link rel="stylesheet" href="resources/css/style-dark.css" />
+  <link rel="stylesheet" href="/resources/css/style.css" />
   <link rel="stylesheet" href="/resources/css/header-style.css">
   <link rel="stylesheet" href="/resources/css/hero-style.css">
   <link rel="stylesheet" href="/resources/css/main-style.css">
@@ -36,11 +38,11 @@
       <label for="close-modal-button" hidden>Close modal window</label>
     </div>
     <form method="POST" action="https://formspree.io/f/meelypzz" target="_blank" class="form-content">
-      <input required autocomplete="name" type="text" name="name" placeholder="name">
-      <input required autocomplete="email" type="email" name="email" placeholder="email">
-      <textarea required name="message" id="message" rows="8" placeholder="message"></textarea>
+      <input required autocomplete="name" type="text" name="name" placeholder="Name" class="contact-input">
+      <input required autocomplete="email" type="email" name="email" placeholder="Email" class="contact-input">
+      <textarea required name="message" id="message" rows="8" placeholder="Message"></textarea>
       <input type="hidden" name="_captcha" value="false">
-      <button type="submit" name="send-message" id="send-message">
+      <button type="submit" name="send-message" id="send-message" class="send-button">
         <p>Send</p>
       </button>
       <label for="send-message" hidden>Button to send message</label>
@@ -71,8 +73,7 @@
       </ul>
       <ul class="buttons-list">
         <li>
-          <button type="button" name="theme-button" id="theme-button" class="theme-button"><i
-              class="fa-regular fa-lightbulb"></i></button>
+          <button type="button" name="theme-button" id="theme-button" class="theme-button">☼</button>
           <label for="theme-button" hidden>Button to toggle theme</label>
         </li>
         <li><a href="/resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
@@ -118,26 +119,19 @@
             I'm Philip Waern, a Backend Developer student at Jensen YH with a focus on cloud technologies.
           </p>
           <p>
-            With over 15 years of experience as a video producer and photographer, I've developed a strong creative
-            mindset and a structured approach to problem-solving. Working in fast-paced productions has taught me how to
-            analyze
-            complex challenges, adapt quickly, and deliver high-quality results under pressure.
-          </p>
-          <p>
-            I genuinely enjoy diving into new technologies and methodologies, understanding how things work under the
-            hood, and continuously expanding my skill set. Learning is a big part of what drives me — whether it's
-            exploring
-            cloud platforms, backend development or new development practices.
+            I have 15 years of experience in video production and photography. Over the years I've been
+            used to think creative when solving all kinds of problem, both in editing and in set. That creative approach 
+            of solving problems is something i'm bringin in to my new carreer as a developer.
           </p>
           <p>
             Today, I'm bringing that same curiosity, creativity, and analytical thinking into software development. My
             goal is to become a professional backend developer, building scalable and reliable cloud-based solutions
-            while
-            continuously growing as a developer.
+            while continuously growing as a developer.
           </p>
         </article>
       </div>
     </section>
+    <!-- SKILLS SECTION -->
     <section id="skills">
       <h2>Skills</h2>
       <!-- icons -->
@@ -207,21 +201,18 @@
       <ul class="case-list">
         <li class="case-card">
           <h3>Keyboard web app</h3>
-          <a href="https://github.com/waernph/Keyboard" target="_blank"><img class="case-image"
-              src="/resources/media/graphics/keyboard-case.webp" alt="img of a synth"></a>
+          <img class="case-image" src="/resources/media/graphics/keyboard-case.webp" alt="img of a synth">
           <p>My own project in trying to make a keyboard using HTML, CSS, JavaScript and Web Audio API.</p>
           <div class="case-btn-section">
             <a class="case-btn" href="https://github.com/waernph/Keyboard" target="_blank"
               aria-label="Link to GitHub"><span>GitHub </span><i class="fa-brands fa-github"></i></a>
-
-            <a class="case-btn" href="https://keyboard.wrn.se/" target="_blank"
-              aria-label="Link to web app"><span>Test it</span></a>
+            <a class="case-btn" href="https://keyboard.wrn.se/" target="_blank" aria-label="Link to web app"><span>Test
+                it</span></a>
           </div>
         </li>
         <li class="case-card">
           <h3>Bank API</h3>
-          <a href="https://github.com/waernph/BankOfWaern.git" target="_blank"><img class="case-image"
-              src="/resources/media/graphics/Bank_app.webp" alt="img of bank app-case"></a>
+          <img class="case-image" src="/resources/media/graphics/Bank_app.webp" alt="img of bank app-case">
           <p>An assignment to build an API for a bank. Some of the techniques used are Entity Framework, Controllers,
             JWT for authorization and authentication, AutoMapper Swagger
           </p>
@@ -230,8 +221,7 @@
         </li>
         <li class="case-card">
           <h3>BrewHub</h3>
-          <a href="https://github.com/waernph/BrewHub.git" target="_blank"><img class="case-image"
-              src="/resources/media/graphics/brewhub.webp" alt="img of BrewHub-case"></a>
+          <img class="case-image" src="/resources/media/graphics/brewhub.webp" alt="img of BrewHub-case">
           <p>An assignment to build an API for a forum. Some of the techiques used are Entity Framework, Controllers,
             JWT for autharization and authentication, AutoMapper Swagger</p>
           <a class="case-btn" href="https://github.com/waernph/BrewHub.git" target="_blank"
@@ -239,11 +229,10 @@
         </li>
         <li class="case-card">
           <h3>Shotgun</h3>
-          <a href="https://github.com/waernph/shotgun3.git" target="_blank"><img class="case-image"
-              src="/resources/media/graphics/Shotsgun_img.webp" alt="img of consol game"></a>
+          <img class="case-image" src="/resources/media/graphics/Shotsgun_img.webp" alt="img of consol game">
           <p>A console game developed as an examination project during the course C#/.NET Basics</p>
           <a class="case-btn" href="https://github.com/waernph/shotgun3.git" target="_blank"
-            aria-label="Link to GitHub"><span>Visit on </span><i class="fa-brands fa-github"></i></a>
+            aria-label="Link to GitHub"><span>GitHub </span><i class="fa-brands fa-github"></i></a>
         </li>
       </ul>
     </section>
