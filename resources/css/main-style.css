@@ -6,7 +6,7 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 25vh;
     margin-left: 5%;
     margin-right: 5%;
 }
