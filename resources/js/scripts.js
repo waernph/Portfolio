@@ -101,6 +101,8 @@ function lightMode() {
     document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
     document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
     document.querySelector("#send-message").style.color = "#FCF8EC";
+    document.querySelector(".modal-h3").style.color = "#FCF8EC";
+    document.querySelector(".close-modal-button").style.color = "#FCF8EC"
 }
 
 function darkMode() {

@@ -25,7 +25,6 @@
     .nav-button {
         width: 100px;
     }
-
     /* NAVBAR */
 
     /* ------------------------------------------------ */
@@ -185,7 +184,7 @@
 }
 
 
-@media (min-width: 401px) and (max-width: 819px) {
+@media (min-width: 401px) and (max-width: 700px) {
     main {
         gap: 10vh;
     }
@@ -202,20 +201,23 @@
     /* CONTACT MODAL */
     .modal {
         right: 0px;
-        width: 50vw;
+        width: 100vw;
+    }
+    .modal-h3 {
+        font-size: 1rem;
     }
     .contact-input {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .send-button{
         padding-bottom: 15px;
         padding-top: 15px;
     }
     .send-button p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .form-content textarea {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
 
@@ -241,7 +243,7 @@
         width: 100px;
         padding-left: 15px;
         padding-right: 15px;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .buttons-list {
@@ -266,7 +268,7 @@
 
     .tag-line {
         position: absolute;
-        top: 76%;
+        top: 79%;
         font-size: 1.2rem;
         text-align: center;
         margin-left: 5%;
@@ -425,7 +427,7 @@
     }
 
 }
-@media (min-width: 820px) and (max-width: 1030px) {
+@media (min-width: 701px) and (max-width: 1030px) {
     main {
         gap: 10vh;
     }
@@ -442,10 +444,17 @@
     /* CONTACT MODAL */
     .modal {
         right: 0px;
-        width: 50vw;
+        width: 100vw;
+    }
+    .modal-header {
+        align-items: center;
+    }
+    .modal-h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0px;
     }
     .contact-input {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .send-button{
         padding-bottom: 15px;
@@ -455,7 +464,7 @@
         font-size: 1.5rem;
     }
     .form-content textarea {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
 
@@ -481,7 +490,7 @@
         width: 100px;
         padding-left: 15px;
         padding-right: 15px;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .buttons-list {
@@ -505,7 +514,7 @@
 
     .tag-line {
         position: absolute;
-        top: 76%;
+        top: 81%;
         font-size: 1.4rem;
         text-align: center;
         margin-left: 5%;
@@ -518,13 +527,13 @@
         gap: 10px;
     }
     .weather-info li {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .city-list {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
-        height: 40px;
-        width: 180px;
+        height: 30px;
+        width: 150px;
     }
     .city-list option {
         font-size: 0.6rem;
