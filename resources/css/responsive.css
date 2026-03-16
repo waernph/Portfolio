@@ -427,7 +427,7 @@
     }
 
 }
-@media (min-width: 701px) and (max-width: 1030px) and (orientation: portrait) {
+@media (min-width: 701px) and (max-width: 1030px) {
     main {
         gap: 10vh;
     }
