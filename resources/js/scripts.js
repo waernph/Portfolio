@@ -117,6 +117,9 @@ function darkMode() {
     document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark_white.svg";
     document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_White.svg";
     document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield.svg";
+    document.querySelector("#send-message").style.color = "var(--bg-color)";
+    document.querySelector(".modal-h3").style.color = "var(--light-color)";
+    document.querySelector(".close-modal-button").style.color = "var(--light-color)";
 }
 
 
