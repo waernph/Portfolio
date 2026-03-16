@@ -96,10 +96,10 @@ function lightMode() {
     document.documentElement.style.setProperty("--hero-color-two", "#af73a3");
 
     document.querySelector(".blur").style.backdropFilter = "blur(16px) brightness(1.1)";
-    document.querySelector("#html5-logo").src = "/resources/media/logos/HTML5_logo_and_wordmark.svg";
-    document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark.svg";
-    document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
-    document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield_black.svg";
+    document.querySelector("#html5-logo").src = "resources/media/logos/HTML5_logo_and_wordmark.svg";
+    document.querySelector("#css3-logo").src = "resources/media/logos/CSS3_logo_and_wordmark.svg";
+    document.querySelector("#github-logo").src = "resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
+    document.querySelector("#js-logo").src = "resources/media/logos/Javascript-shield_black.svg";
     document.querySelector("#send-message").style.color = "#FCF8EC";
     document.querySelector(".modal-h3").style.color = "#FCF8EC";
     document.querySelector(".close-modal-button").style.color = "#FCF8EC"
@@ -113,10 +113,10 @@ function darkMode() {
     document.documentElement.style.setProperty("--hero-color-two", "#b978ac");
 
     document.querySelector(".blur").style.backdropFilter = "blur(16px) brightness(0.7)";
-    document.querySelector("#html5-logo").src = "/resources/media/logos/HTML5_logo_and_wordmark_white.svg";
-    document.querySelector("#css3-logo").src = "/resources/media/logos/CSS3_logo_and_wordmark_white.svg";
-    document.querySelector("#github-logo").src = "/resources/media/logos/GitHub/GitHub_Invertocat_White.svg";
-    document.querySelector("#js-logo").src = "/resources/media/logos/Javascript-shield.svg";
+    document.querySelector("#html5-logo").src = "resources/media/logos/HTML5_logo_and_wordmark_white.svg";
+    document.querySelector("#css3-logo").src = "resources/media/logos/CSS3_logo_and_wordmark_white.svg";
+    document.querySelector("#github-logo").src = "resources/media/logos/GitHub/GitHub_Invertocat_White.svg";
+    document.querySelector("#js-logo").src = "resources/media/logos/Javascript-shield.svg";
     document.querySelector("#send-message").style.color = "var(--bg-color)";
     document.querySelector(".modal-h3").style.color = "var(--light-color)";
     document.querySelector(".close-modal-button").style.color = "var(--light-color)";
