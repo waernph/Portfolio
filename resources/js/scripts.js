@@ -138,6 +138,7 @@ themeSwitch.addEventListener("click", function () {
 
 });
 
+// ------------ För att avgöra om fönstrets bredd minskas -------------
 
 addEventListener("resize", function () {
     windowWidth = window.innerWidth;
@@ -145,18 +146,20 @@ addEventListener("resize", function () {
         console.log(windowWidth);
     }
 })
+
+// ------------ För att avgöra om användare scrollar ner eller inte -------------
 isScrollingDown = false;
 windowScroll = 0;
 addEventListener("scroll", function () {
     if (window.scrollY > windowScroll + 100) {
         windowScroll = window.scrollY;
         isScrollingDown = true;
-        console.log(isScrollingDown);
+        console.log("Is scrolling down: " + isScrollingDown);
     }
     else if (window.scrollY < windowScroll - 100) {
         windowScroll = window.scrollY;
         isScrollingDown = false;
-        console.log(isScrollingDown);
+        console.log("Is scrolling down: " + isScrollingDown);
     }
 })
 
