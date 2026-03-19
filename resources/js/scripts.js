@@ -110,6 +110,7 @@ function darkMode() {
     document.documentElement.style.setProperty("--bg-color", "#1B3C53");
     document.documentElement.style.setProperty("--light-color", "#D2C1B6");
     document.documentElement.style.setProperty("--highlight", "#78B9B5");
+    document.documentElement.style.setProperty("--extra-dark", "#152e3f");
     document.documentElement.style.setProperty("--hero-color-one", "#74ff86");
     document.documentElement.style.setProperty("--hero-color-two", "#b978ac");
 
