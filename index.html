@@ -78,7 +78,7 @@
           <label for="theme-button" hidden>Button to toggle theme</label>
         </li>
         <li><a href="resources/media/CV/CV_2026_Philip_Waern.pdf" download><button
-              class="download-cv-button nav-button">Download
+              class="download-cv-button nav-button" id="download-cv">Download
               CV</button></a></li>
         <li><button class="contact-me-button nav-button" id="button-open-modal">Contact me</button></li>
       </ul>
@@ -110,7 +110,7 @@
 
     <!-- ABOUT ME SECTION -->
     <section class="about-me" id="about-me">
-      <h2>About me</h2>
+      <h2 id="about-me-h2">About me</h2>
       <div class="content-about-me">
         <video autoplay muted loop playsinline> <!--  playsinline prevents video from popping up on ios -->
           <source src="resources/media/motion/Profilepic.webm" />
@@ -134,7 +134,7 @@
     </section>
     <!-- SKILLS SECTION -->
     <section id="skills">
-      <h2>Skills</h2>
+      <h2 id="skills-h2">Skills</h2>
       <!-- icons -->
       <ul class="logos">
         <li>
@@ -211,7 +211,7 @@
             <li><img class="case-loggos" id="js-case-logo" src="resources/media/logos/Javascript-shield.svg" alt="JavaScript logo">
             </li>
           </ul>
-          <p>My own project in trying to make a keyboard using HTML, CSS, JavaScript and Web Audio API.</p>
+          <p id="case-one">My own project in trying to make a keyboard using HTML, CSS, JavaScript and Web Audio API.</p>
           <div class="case-btn-section">
             <a class="case-btn" href="https://github.com/waernph/Keyboard" target="_blank"
               aria-label="Link to keyboard project at GitHub"><span>GitHub </span><i
@@ -229,7 +229,7 @@
             <li><img class="case-loggos" src="resources/media/logos/Microsoft_SQL_Server_2025_icon.svg"
                 alt="sql server logo"></li>
           </ul>
-          <p>An assignment to build an API for a bank. Some of the techniques used are Entity Framework, Controllers,
+          <p id="case-two">An assignment to build an API for a bank. Some of the techniques used are Entity Framework, Controllers,
             JWT for authorization and authentication, AutoMapper Swagger
           </p>
           <a class="case-btn" href="https://github.com/waernph/BankOfWaern.git" target="_blank"
@@ -244,7 +244,7 @@
             <li><img class="case-loggos" src="resources/media/logos/Microsoft_SQL_Server_2025_icon.svg"
                 alt="sql server logo"></li>
           </ul>
-          <p>An assignment to build an API for a forum. Some of the techiques used are Entity Framework, Controllers,
+          <p id="case-three">An assignment to build an API for a forum. Some of the techiques used are Entity Framework, Controllers,
             JWT for autharization and authentication, AutoMapper Swagger</p>
           <a class="case-btn" href="https://github.com/waernph/BrewHub.git" target="_blank"
             aria-label="Link to a forum API project at GitHub"><span>GitHub </span><i
@@ -256,7 +256,7 @@
           <ul class="case-logo-list">
             <li><img class="case-loggos" src="resources/media/logos/C_Sharp_Logo_2023.svg" alt="c#-logo"></li>
           </ul>
-          <p>A console game developed as an examination project during the course C#/.NET Basics</p>
+          <p id="case-four">A console game developed as an examination project during the course C#/.NET Basics</p>
           <a class="case-btn" href="https://github.com/waernph/shotgun3.git" target="_blank"
             aria-label="Link to a console game project at GitHub"><span>GitHub </span><i
               class="fa-brands fa-github"></i></a>
@@ -264,7 +264,7 @@
       </ul>
     </section>
     <section class="references" id="references">
-      <h2>References</h2>
+      <h2 id="references-h2">References</h2>
       <div class="reference-div">
         <em class="reference-text" id="reference-text"></em>
         <div class="reference-person">

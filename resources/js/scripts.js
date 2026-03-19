@@ -1,6 +1,6 @@
-var contactModal = document.getElementById("contact-modal");
-var openButton = document.getElementById("button-open-modal");
-var closeButton = document.getElementsByClassName("button-close-modal");
+const contactModal = document.getElementById("contact-modal");
+const openButton = document.getElementById("button-open-modal");
+const closeButton = document.getElementsByClassName("button-close-modal");
 
 function year() {
     const year = new Date().getFullYear();
@@ -252,8 +252,9 @@ sendButton.addEventListener("click", function () {
     sendButton.innerText = "Email sent!";
 })
 
-let isEnglish = false;
+let isEnglish = true;
 function translation() {
+    const downloadCv = document.querySelector("#download-cv");
     const aboutMeTextOne = document.querySelector("#about-me-text-1");
     const aboutMeTextTwo = document.querySelector("#about-me-text-2");
     const aboutMeTextThree = document.querySelector("#about-me-text-3");
@@ -264,6 +265,17 @@ function translation() {
     const aboutMeMobile = document.querySelector("#about-me-mobile");
     const skillsMobile = document.querySelector("#skills-mobile");
     const referencesMobile = document.querySelector("#references-mobile");
+
+    const aboutMeH2 = document.querySelector("#about-me-h2");
+    const skillsH2 = document.querySelector("#skills-h2");
+    const referencesH2 = document.querySelector("#references-h2");
+
+    const caseOne = document.querySelector("#case-one");
+    const caseTwo = document.querySelector("#case-two");
+    const caseThree = document.querySelector("#case-three");
+    const caseFour = document.querySelector("#case-four");
+
+    
 
     if (!isEnglish) {
         aboutMeTextOne.innerText = "Jag heter Philip Waern och studerar .NET-utvecklare med molninriktning på Jensen YH."
@@ -276,6 +288,18 @@ function translation() {
         aboutMeMobile.innerText = "Om mig";
         skillsMobile.innerText = "Kompetenser";
         referencesMobile.innerText = "Referenser";
+
+        aboutMeH2.innerText = "Om mig";
+        skillsH2.innerText = "Kompetenser";
+        referencesH2.innerText = "Referenser";
+
+        modalButton.innerText = "Kontakta mig";
+        downloadCv.innerText = "Ladda ner CV"
+
+        caseOne.innerText = "Ett eget projekt med att göra en synth genom att använda HTML, CSS och JavaScript tillsammans med Web Audio API."
+        caseTwo.innerText
+        caseThree.innerText
+        caseFour.innerText = "Ett konsolspel utvecklat som en inlämninguppgift under kursen C# grund";
     }
 }
 translation();
