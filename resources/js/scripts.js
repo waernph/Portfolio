@@ -101,6 +101,11 @@ function lightMode() {
     document.querySelector("#css3-logo").src = "resources/media/logos/CSS3_logo_and_wordmark.svg";
     document.querySelector("#github-logo").src = "resources/media/logos/GitHub/GitHub_Invertocat_Black.svg";
     document.querySelector("#js-logo").src = "resources/media/logos/Javascript-shield_black.svg";
+
+    document.querySelector("#html-case-logo").src = "resources/media/logos/HTML5_logo_and_wordmark.svg";
+    document.querySelector("#css-case-logo").src = "resources/media/logos/CSS3_logo_and_wordmark.svg";
+    document.querySelector("#js-case-logo").src = "resources/media/logos/Javascript-shield_black.svg";
+
     document.querySelector("#send-message").style.color = "#FCF8EC";
     document.querySelector(".modal-h3").style.color = "#FCF8EC";
     document.querySelector(".close-modal-button").style.color = "#FCF8EC"
@@ -119,6 +124,11 @@ function darkMode() {
     document.querySelector("#css3-logo").src = "resources/media/logos/CSS3_logo_and_wordmark_white.svg";
     document.querySelector("#github-logo").src = "resources/media/logos/GitHub/GitHub_Invertocat_White.svg";
     document.querySelector("#js-logo").src = "resources/media/logos/Javascript-shield.svg";
+
+    document.querySelector("#html-case-logo").src = "resources/media/logos/HTML5_logo_and_wordmark_white.svg";
+    document.querySelector("#css-case-logo").src = "resources/media/logos/CSS3_logo_and_wordmark_white.svg";
+    document.querySelector("#js-case-logo").src = "resources/media/logos/Javascript-shield.svg";
+
     document.querySelector("#send-message").style.color = "var(--bg-color)";
     document.querySelector(".modal-h3").style.color = "var(--light-color)";
     document.querySelector(".close-modal-button").style.color = "var(--light-color)";
