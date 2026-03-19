@@ -126,9 +126,12 @@ body {
     border: var(--light-color) 2px solid;
     border-radius: 10px;
     padding: 20px;
+    margin-top: 10px;
+    gap: 20px;
     background-color: var(--extra-dark);
     transition: all 0.3s ease-in-out;
 }
+
 .case-card:hover {
     box-shadow: 0px 0px 10px var(--highlight);
 }
@@ -142,7 +145,19 @@ body {
 .case-card p {
     display: flex;
     width: 250px;
+    padding: 0px;
+    margin: 0px;
     /* border-left: var(--highlight) 3px solid; */
+}
+
+.case-logo-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.case-loggos {
+    height: 40px;
 }
 
 .case-btn-section {
