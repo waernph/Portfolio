@@ -251,3 +251,31 @@ sendButton.addEventListener("click", function () {
     sendButton.style.backgroundColor = "var(--highlight)"
     sendButton.innerText = "Email sent!";
 })
+
+let isEnglish = false;
+function translation() {
+    const aboutMeTextOne = document.querySelector("#about-me-text-1");
+    const aboutMeTextTwo = document.querySelector("#about-me-text-2");
+    const aboutMeTextThree = document.querySelector("#about-me-text-3");
+
+    const aboutMe = document.querySelector("#about-me");
+    const skills = document.querySelector("#skills");
+    const references = document.querySelector("#references");
+    const aboutMeMobile = document.querySelector("#about-me-mobile");
+    const skillsMobile = document.querySelector("#skills-mobile");
+    const referencesMobile = document.querySelector("#references-mobile");
+
+    if (!isEnglish) {
+        aboutMeTextOne.innerText = "Jag heter Philip Waern och studerar .NET-utvecklare med molninriktning på Jensen YH."
+        aboutMeTextTwo.innerText = "Jag har 15 års erfarenhet av videoproduktion och fotografi. Under åren har jag varit van vid att tänka kreativt när jag löser alla typer av problem, både i redigering och på inspelningsplats. Det kreativa sättet att lösa problem är något jag tar med mig in i min nya karriär som utvecklare.";
+        aboutMeTextThree.innerText = "Nu tar jag med mig samma nyfikenhet, kreativitet och analytiska tänkande in i min nyaroll som utvecklare. Mitt mål är att bli en professionell backendutvecklare och bygga skalbara och tillförlitliga molnbaserade lösningar, samtidigt som jag kontinuerligt utvecklas som utvecklare.";
+        
+        aboutMe.innerText = "Om mig";
+        skills.innerText = "Kompetenser";
+        references.innerText = "Referenser";
+        aboutMeMobile.innerText = "Om mig";
+        skillsMobile.innerText = "Kompetenser";
+        referencesMobile.innerText = "Referenser";
+    }
+}
+translation();
