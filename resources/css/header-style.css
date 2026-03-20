@@ -54,7 +54,6 @@ header {
 .language {
     position: fixed;
     top: 25px;
-    /* right: 20px; */
     z-index: 101;
 }
 .language:hover{

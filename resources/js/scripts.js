@@ -266,9 +266,9 @@ const aboutMeTextOneOg = aboutMeTextOne.innerText;
 const aboutMeTextTwoOg = aboutMeTextTwo.innerText;
 const aboutMeTextThreeOg = aboutMeTextThree.innerText;
 
-const aboutMe = document.querySelector("#about-me");
-const skills = document.querySelector("#skills");
-const references = document.querySelector("#references");
+const aboutMe = document.querySelector("#about-me-nav");
+const skills = document.querySelector("#skills-nav");
+const references = document.querySelector("#references-nav");
 const aboutMeMobile = document.querySelector("#about-me-mobile");
 const skillsMobile = document.querySelector("#skills-mobile");
 const referencesMobile = document.querySelector("#references-mobile");
