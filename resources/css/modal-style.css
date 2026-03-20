@@ -41,18 +41,15 @@
     border: var(--light-color) 0px none;
     background-color: var(--light-color);
     color: var(--bg-color);
-    font-family: "Nunito", sans-serif;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
     padding: 10px;
     transition: all 0.3s ease-in-out;
 }
 
-.form-content button p {
-    color: var(--bg-color);
-    font-weight: 600;
-    font-family: "Orbitron", sans-serif;
-}
 
-.form-content button:hover {
+
+.send-button:hover {
     cursor: pointer;
     background-color: var(--highlight);
 }
