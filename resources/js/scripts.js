@@ -246,49 +246,49 @@ sendButton.addEventListener("click", function () {
 
 const flag = document.querySelector("#language");
 
-    const downloadCv = document.querySelector("#download-cv");
-    const aboutMeTextOne = document.querySelector("#about-me-text-1");
-    const aboutMeTextTwo = document.querySelector("#about-me-text-2");
-    const aboutMeTextThree = document.querySelector("#about-me-text-3");
-    const downloadCvOg = downloadCv;
-    const modalButtonOg = modalButton;
-    const aboutMeTextOneOg = aboutMeTextOne;
-    const aboutMeTextTwoOg = aboutMeTextTwo;
-    const aboutMeTextThreeOg = aboutMeTextThree;
+const downloadCv = document.querySelector("#download-cv");
+const aboutMeTextOne = document.querySelector("#about-me-text-1");
+const aboutMeTextTwo = document.querySelector("#about-me-text-2");
+const aboutMeTextThree = document.querySelector("#about-me-text-3");
+const downloadCvOg = downloadCv.innerText;
+const modalButtonOg = modalButton.innerText;
+const aboutMeTextOneOg = aboutMeTextOne.innerText;
+const aboutMeTextTwoOg = aboutMeTextTwo.innerText;
+const aboutMeTextThreeOg = aboutMeTextThree.innerText;
 
-    const aboutMe = document.querySelector("#about-me");
-    const skills = document.querySelector("#skills");
-    const references = document.querySelector("#references");
-    const aboutMeMobile = document.querySelector("#about-me-mobile");
-    const skillsMobile = document.querySelector("#skills-mobile");
-    const referencesMobile = document.querySelector("#references-mobile");
-    const aboutMeOg = aboutMe;
-    const skillsOg = skills;
-    const referencesOg = references;
-    const aboutMeMobileOg = aboutMeMobile;
-    const skillsMobileOg = skillsMobile;
-    const referencesMobileOg = referencesMobile;
+const aboutMe = document.querySelector("#about-me");
+const skills = document.querySelector("#skills");
+const references = document.querySelector("#references");
+const aboutMeMobile = document.querySelector("#about-me-mobile");
+const skillsMobile = document.querySelector("#skills-mobile");
+const referencesMobile = document.querySelector("#references-mobile");
+const aboutMeOg = aboutMe.innerText;
+const skillsOg = skills.innerText;
+const referencesOg = references.innerText;
+const aboutMeMobileOg = aboutMeMobile.innerText;
+const skillsMobileOg = skillsMobile.innerText;
+const referencesMobileOg = referencesMobile.innerText;
 
 
-    const aboutMeH2 = document.querySelector("#about-me-h2");
-    const skillsH2 = document.querySelector("#skills-h2");
-    const referencesH2 = document.querySelector("#references-h2");
-    const aboutMeH2Og = aboutMeH2;
-    const skillsH2Og = skillsH2;
-    const referencesH2Og = referencesH2;
+const aboutMeH2 = document.querySelector("#about-me-h2");
+const skillsH2 = document.querySelector("#skills-h2");
+const referencesH2 = document.querySelector("#references-h2");
+const aboutMeH2Og = aboutMeH2.innerText;
+const skillsH2Og = skillsH2.innerText;
+const referencesH2Og = referencesH2.innerText;
 
-    const caseOne = document.querySelector("#case-one");
-    const caseTwo = document.querySelector("#case-two");
-    const caseThree = document.querySelector("#case-three");
-    const caseFour = document.querySelector("#case-four");
-    const caseOneOg = caseOne;
-    const caseTwoOg = caseTwo;
-    const caseThreeOg = caseThree;
-    const caseFourOg = caseFour;
+const caseOne = document.querySelector("#case-one");
+const caseTwo = document.querySelector("#case-two");
+const caseThree = document.querySelector("#case-three");
+const caseFour = document.querySelector("#case-four");
+const caseOneOg = caseOne.innerText;
+const caseTwoOg = caseTwo.innerText;
+const caseThreeOg = caseThree.innerText;
+const caseFourOg = caseFour.innerText;
 
 let isEnglish = true;
 function translation() {
-    
+
     if (!isEnglish) {
         flag.src = "resources/media/graphics/uk-flag.svg";
         flag.alt = "The Union Jack flag";
@@ -323,43 +323,45 @@ function translation() {
     else if (isEnglish) {
         flag.src = "resources/media/graphics/swe-flag.svg";
         flag.alt = "Swedish flag";
-        aboutMeTextOne.innerText = aboutMeTextOneOg.innerText;
-        aboutMeTextTwo.innerText = aboutMeTextTwoOg.innerText;
-        aboutMeTextThree.innerText = aboutMeTextThreeOg.innerText;
+        aboutMeTextOne.innerText = aboutMeTextOneOg;
+        aboutMeTextTwo.innerText = aboutMeTextTwoOg;
+        aboutMeTextThree.innerText = aboutMeTextThreeOg;
 
-        aboutMe.innerText = aboutMeOg.innerText;
-        skills.innerText = skillsOg.innerText;
-        references.innerText = referencesOg.innerText;
-        aboutMeMobile.innerText = aboutMeMobileOg.innerText;
-        skillsMobile.innerText = skillsMobileOg.innerText;
-        referencesMobile.innerText = referencesMobileOg.innerText;
+        aboutMe.innerText = aboutMeOg;
+        skills.innerText = skillsOg;
+        references.innerText = referencesOg;
+        aboutMeMobile.innerText = aboutMeMobileOg;
+        skillsMobile.innerText = skillsMobileOg;
+        referencesMobile.innerText = referencesMobileOg;
 
-        aboutMeH2.innerText = aboutMeH2Og.innerText;
-        skillsH2.innerText = skillsH2Og.innerText;
-        referencesH2.innerText = referencesH2Og.innerText;
+        aboutMeH2.innerText = aboutMeH2Og;
+        skillsH2.innerText = skillsH2Og;
+        referencesH2.innerText = referencesH2Og;
 
-        modalButton.innerText = modalButtonOg.innerText;
-        downloadCv.innerText = downloadCvOg.innerText;
-
-        caseOne.innerText = caseOneOg.innerText;
-        caseTwo.innerText = caseTwoOg.innerText;
-        caseThree.innerText = caseThreeOg.innerText;
-        caseFour.innerText = caseFourOg.innerText;
+        modalButton.innerText = modalButtonOg;
+        downloadCv.innerText = downloadCvOg;
+        
+        
+        caseOne.innerText = caseOneOg;
+        caseTwo.innerText = caseTwoOg;
+        caseThree.innerText = caseThreeOg;
+        caseFour.innerText = caseFourOg;
 
         weatherLanguage = "en";
         updateWeather();
         isEnglish = true;
+        console.log(caseFourOg.innerText);
     }
 }
-translation();
+// translation();
 
 const languageBtn = document.querySelector("#language");
 languageBtn.addEventListener("click", () => {
-    if(isEnglish){
+    if (isEnglish) {
         isEnglish = false;
         translation();
     }
-    else if (!isEnglish){
+    else if (!isEnglish) {
         isEnglish = true;
         translation();
     }
