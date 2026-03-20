@@ -30,6 +30,18 @@
     --padding-left: 30px;
     scroll-behavior: smooth;
 }
+.language {
+    position: fixed;
+    top: 50vh;
+    left: 96vw;
+    z-index: 98;
+}
+.language:hover{
+    cursor: pointer;
+}
+.flag {
+    height: 30px;
+}
 
 
 body {

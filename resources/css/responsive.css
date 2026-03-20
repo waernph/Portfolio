@@ -8,6 +8,13 @@
 
     /* CONTACT MODAL */
 
+    /* LANGUAGE SELECTOR */
+    .language {
+        top: 90vh;
+        left: 90vw;
+    }
+
+    /* LANGUAGE SELECTOR */
 
     /* NAVBAR */
     .navbar-ul {
@@ -25,6 +32,7 @@
     .nav-button {
         width: 100px;
     }
+
     /* NAVBAR */
 
     /* ------------------------------------------------ */
@@ -67,6 +75,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .content-about-me video {
         width: 100%
     }
@@ -198,24 +207,37 @@
         color: var(--highlight);
     }
 
+    /* LANGUAGE SELECTOR */
+    .language {
+        top: 90vh;
+        left: 90vw;
+    }
+
+    /* LANGUAGE SELECTOR */
+
     /* CONTACT MODAL */
     .modal {
         right: 0px;
         width: 100vw;
     }
+
     .modal-h3 {
         font-size: 1rem;
     }
+
     .contact-input {
         font-size: 1rem;
     }
-    .send-button{
+
+    .send-button {
         padding-bottom: 15px;
         padding-top: 15px;
     }
+
     .send-button p {
         font-size: 1rem;
     }
+
     .form-content textarea {
         font-size: 1rem;
     }
@@ -258,7 +280,7 @@
 
     h1 {
         font-size: 2.3rem;
-        
+
         margin-top: 2rem;
     }
 
@@ -288,6 +310,7 @@
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+
     main p {
         font-size: 1.4rem;
         line-height: 1.8rem;
@@ -296,6 +319,7 @@
     h2 {
         text-align: center;
     }
+
     h3 {
         font-size: 2rem;
     }
@@ -371,9 +395,11 @@
     .case-btn {
         margin-bottom: 10%;
     }
+
     .case-image {
         width: 99%;
     }
+
     .case-card p {
         width: 99%;
     }
@@ -427,6 +453,7 @@
     }
 
 }
+
 @media (min-width: 701px) and (max-width: 1030px) {
     main {
         gap: 10vh;
@@ -441,28 +468,45 @@
         color: var(--highlight);
     }
 
+    /* LANGUAGE SELECTOR */
+    .language {
+        top: 90vh;
+        left: 92vw;
+    }
+    .flag {
+        height: 50px;
+    }
+
+    /* LANGUAGE SELECTOR */
+
     /* CONTACT MODAL */
     .modal {
         right: 0px;
         width: 100vw;
     }
+
     .modal-header {
         align-items: center;
     }
+
     .modal-h3 {
         font-size: 1.3rem;
         margin-bottom: 0px;
     }
+
     .contact-input {
         font-size: 1rem;
     }
-    .send-button{
+
+    .send-button {
         padding-bottom: 15px;
         padding-top: 15px;
     }
+
     .send-button p {
         font-size: 1.5rem;
     }
+
     .form-content textarea {
         font-size: 1rem;
     }
@@ -526,15 +570,18 @@
         justify-content: space-between;
         gap: 10px;
     }
+
     .weather-info li {
         font-size: 1rem;
     }
+
     .city-list {
         font-size: 1rem;
         font-weight: 600;
         height: 30px;
         width: 150px;
     }
+
     .city-list option {
         font-size: 0.6rem;
     }
@@ -548,6 +595,7 @@
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+
     main p {
         font-size: 1.4rem;
         line-height: 1.8rem;
@@ -632,12 +680,15 @@
         margin-bottom: 10%;
         font-size: 2.5rem;
     }
+
     .case-btn span {
         font-size: 1.7rem;
     }
+
     .case-image {
         width: 99%;
     }
+
     .case-card p {
         width: 99%;
     }
