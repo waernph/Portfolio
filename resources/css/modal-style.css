@@ -35,11 +35,13 @@
     margin-bottom: 0px;
 }
 
-.form-content button {
+.send-button {
     margin-top: 15px;
     border-radius: 5px;
     border: var(--light-color) 0px none;
     background-color: var(--light-color);
+    color: var(--bg-color);
+    font-family: "Nunito", sans-serif;
     padding: 10px;
     transition: all 0.3s ease-in-out;
 }
