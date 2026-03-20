@@ -51,6 +51,20 @@ header {
     list-style: none;
 }
 
+.language {
+    position: fixed;
+    top: 25px;
+    /* right: 20px; */
+    z-index: 101;
+}
+.language:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px var(--highlight));
+}
+.flag {
+    height: 30px;
+}
+
 
 .logo {
     display: flex;
