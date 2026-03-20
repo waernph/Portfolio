@@ -146,7 +146,6 @@ themeSwitch.addEventListener("click", function () {
         document.querySelector(".theme-button").innerText = "☼";
         isDarkTheme = true;
     }
-    console.log(isDarkTheme);
 
 });
 
@@ -157,12 +156,10 @@ addEventListener("scroll", function () {
     if (window.scrollY > windowScroll + 100) {
         windowScroll = window.scrollY;
         isScrollingDown = true;
-        console.log("Is scrolling down: " + isScrollingDown);
     }
     else if (window.scrollY < windowScroll - 100) {
         windowScroll = window.scrollY;
         isScrollingDown = false;
-        console.log("Is scrolling down: " + isScrollingDown);
     }
 })
 
@@ -236,12 +233,40 @@ for (let i = 0; i < navbarLinkModal.length; i++) {
     const element = navbarLinkModal[i];
     element.addEventListener("click", closeMenu);
 }
-
+const form = document.querySelector(".form-content");
 const sendButton = document.querySelector("#send-message");
-sendButton.addEventListener("click", function () {
-    sendButton.style.backgroundColor = "var(--highlight)"
-    sendButton.innerText = "Email sent!";
-})
+form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // stoppar redirect
+
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch("https://formspree.io/f/meelypzz", {
+            method: "POST",
+            body: data,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+            sendButton.style.backgroundColor = "var(--highlight)"
+            sendButton.innerText = "Thanks!";
+            form.reset();
+        } else {
+            sendButton.style.backgroundColor = "#DB1A1A";
+            
+        }
+    } catch (error) {
+        sendButton.innerText = "Something went wrong.";
+    }
+});
+
+// const sendButton = document.querySelector("#send-message");
+// sendButton.addEventListener("click", function () {
+//     sendButton.style.backgroundColor = "var(--highlight)"
+//     sendButton.innerText = "Email sent!";
+// })
 
 
 const flag = document.querySelector("#language");
@@ -341,7 +366,7 @@ function translation() {
 
         nameField.placeholder = nameFieldOg;
         messageField.placeholder = messageFieldOg;
-        modalHeader.innerText =modalButtonOg;
+        modalHeader.innerText = modalButtonOg;
         sendBtn.innerText = sendBtnOg;
 
         aboutMeTextOne.innerText = aboutMeTextOneOg;
@@ -371,7 +396,6 @@ function translation() {
         weatherLanguage = "en";
         updateWeather();
         isEnglish = true;
-        console.log(caseFourOg.innerText);
     }
 }
 // translation();
