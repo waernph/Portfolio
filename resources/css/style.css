@@ -34,7 +34,7 @@
     position: fixed;
     top: 50vh;
     left: 96vw;
-    z-index: 300;
+    z-index: 98;
 }
 .language:hover{
     cursor: pointer;

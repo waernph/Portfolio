@@ -246,6 +246,16 @@ sendButton.addEventListener("click", function () {
 
 const flag = document.querySelector("#language");
 
+const modalHeader = document.querySelector("#modal-header");
+const sendBtn = document.querySelector("#send-btn-text");
+const nameField = document.querySelector("#name");
+const emailField = document.querySelector("#email");
+const messageField = document.querySelector("#message");
+const modalHeaderOg = modalHeader.innerText;
+const sendBtnOg = sendBtn.innerText;
+const nameFieldOg = nameField.placeholder;
+const messageFieldOg = messageField.placeholder;
+
 const downloadCv = document.querySelector("#download-cv");
 const aboutMeTextOne = document.querySelector("#about-me-text-1");
 const aboutMeTextTwo = document.querySelector("#about-me-text-2");
@@ -293,6 +303,11 @@ function translation() {
         flag.src = "resources/media/graphics/uk-flag.svg";
         flag.alt = "The Union Jack flag";
 
+        nameField.placeholder = "Namn";
+        messageField.placeholder = "Meddelande";
+        modalHeader.innerText = "Hör gärna av dig via formuläret";
+        sendBtn.innerText = "Skicka";
+
         aboutMeTextOne.innerText = "Jag heter Philip Waern och studerar .NET-utvecklare med molninriktning på Jensen YH."
         aboutMeTextTwo.innerText = "Jag har 15 års erfarenhet av videoproduktion och fotografi. Under åren har jag varit van vid att tänka kreativt när jag löser alla typer av problem, både i redigering och på inspelningsplats. Det kreativa sättet att lösa problem är något jag tar med mig in i min nya karriär som utvecklare.";
         aboutMeTextThree.innerText = "Nu tar jag med mig samma nyfikenhet, kreativitet och analytiska tänkande in i min nyaroll som utvecklare. Mitt mål är att bli en professionell backendutvecklare och bygga skalbara och tillförlitliga molnbaserade lösningar, samtidigt som jag kontinuerligt utvecklas som utvecklare.";
@@ -323,6 +338,12 @@ function translation() {
     else if (isEnglish) {
         flag.src = "resources/media/graphics/swe-flag.svg";
         flag.alt = "Swedish flag";
+
+        nameField.placeholder = nameFieldOg;
+        messageField.placeholder = messageFieldOg;
+        modalHeader.innerText =modalButtonOg;
+        sendBtn.innerText = sendBtnOg;
+
         aboutMeTextOne.innerText = aboutMeTextOneOg;
         aboutMeTextTwo.innerText = aboutMeTextTwoOg;
         aboutMeTextThree.innerText = aboutMeTextThreeOg;
@@ -340,8 +361,8 @@ function translation() {
 
         modalButton.innerText = modalButtonOg;
         downloadCv.innerText = downloadCvOg;
-        
-        
+
+
         caseOne.innerText = caseOneOg;
         caseTwo.innerText = caseTwoOg;
         caseThree.innerText = caseThreeOg;
