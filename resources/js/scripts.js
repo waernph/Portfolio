@@ -243,8 +243,9 @@ sendButton.addEventListener("click", function () {
     sendButton.innerText = "Email sent!";
 })
 
-let isEnglish = false;
-function translation() {
+
+const flag = document.querySelector("#language");
+
     const downloadCv = document.querySelector("#download-cv");
     const aboutMeTextOne = document.querySelector("#about-me-text-1");
     const aboutMeTextTwo = document.querySelector("#about-me-text-2");
@@ -253,7 +254,7 @@ function translation() {
     const modalButtonOg = modalButton;
     const aboutMeTextOneOg = aboutMeTextOne;
     const aboutMeTextTwoOg = aboutMeTextTwo;
-    const aboutMeTextThreeOg = aboutMeTextThree
+    const aboutMeTextThreeOg = aboutMeTextThree;
 
     const aboutMe = document.querySelector("#about-me");
     const skills = document.querySelector("#skills");
@@ -285,9 +286,13 @@ function translation() {
     const caseThreeOg = caseThree;
     const caseFourOg = caseFour;
 
-
-
+let isEnglish = true;
+function translation() {
+    
     if (!isEnglish) {
+        flag.src = "resources/media/graphics/uk-flag.svg";
+        flag.alt = "The Union Jack flag";
+
         aboutMeTextOne.innerText = "Jag heter Philip Waern och studerar .NET-utvecklare med molninriktning på Jensen YH."
         aboutMeTextTwo.innerText = "Jag har 15 års erfarenhet av videoproduktion och fotografi. Under åren har jag varit van vid att tänka kreativt när jag löser alla typer av problem, både i redigering och på inspelningsplats. Det kreativa sättet att lösa problem är något jag tar med mig in i min nya karriär som utvecklare.";
         aboutMeTextThree.innerText = "Nu tar jag med mig samma nyfikenhet, kreativitet och analytiska tänkande in i min nyaroll som utvecklare. Mitt mål är att bli en professionell backendutvecklare och bygga skalbara och tillförlitliga molnbaserade lösningar, samtidigt som jag kontinuerligt utvecklas som utvecklare.";
@@ -313,33 +318,49 @@ function translation() {
 
         weatherLanguage = "se";
         updateWeather();
+        isEnglish = false;
     }
     else if (isEnglish) {
-        aboutMeTextOne = aboutMeTextOneOg;
-        aboutMeTextTwo = aboutMeTextTwoOg;
-        aboutMeTextThree = aboutMeTextThreeOg;
+        flag.src = "resources/media/graphics/swe-flag.svg";
+        flag.alt = "Swedish flag";
+        aboutMeTextOne.innerText = aboutMeTextOneOg.innerText;
+        aboutMeTextTwo.innerText = aboutMeTextTwoOg.innerText;
+        aboutMeTextThree.innerText = aboutMeTextThreeOg.innerText;
 
-        aboutMe = aboutMeOg;
-        skills = skillsOg;
-        references = referencesOg;
-        aboutMeMobile = aboutMeMobileOg;
-        skillsMobile = skillsMobileOg;
-        referencesMobile = referencesMobileOg;
+        aboutMe.innerText = aboutMeOg.innerText;
+        skills.innerText = skillsOg.innerText;
+        references.innerText = referencesOg.innerText;
+        aboutMeMobile.innerText = aboutMeMobileOg.innerText;
+        skillsMobile.innerText = skillsMobileOg.innerText;
+        referencesMobile.innerText = referencesMobileOg.innerText;
 
-        aboutMeH2 = aboutMeH2Og;
-        skillsH2 = skillsH2Og;
-        referencesH2 = referencesH2Og;
+        aboutMeH2.innerText = aboutMeH2Og.innerText;
+        skillsH2.innerText = skillsH2Og.innerText;
+        referencesH2.innerText = referencesH2Og.innerText;
 
-        modalButton.modalButtonOg;
-        downloadCv.downloadCvOg;
+        modalButton.innerText = modalButtonOg.innerText;
+        downloadCv.innerText = downloadCvOg.innerText;
 
-        caseOne = caseOneOg
-        caseTwo = caseTwoOg;
-        caseThree = caseThreeOg;
-        caseFour = caseFourOg;
+        caseOne.innerText = caseOneOg.innerText;
+        caseTwo.innerText = caseTwoOg.innerText;
+        caseThree.innerText = caseThreeOg.innerText;
+        caseFour.innerText = caseFourOg.innerText;
 
         weatherLanguage = "en";
         updateWeather();
+        isEnglish = true;
     }
 }
 translation();
+
+const languageBtn = document.querySelector("#language");
+languageBtn.addEventListener("click", () => {
+    if(isEnglish){
+        isEnglish = false;
+        translation();
+    }
+    else if (!isEnglish){
+        isEnglish = true;
+        translation();
+    }
+})
