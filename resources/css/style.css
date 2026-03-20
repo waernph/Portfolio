@@ -32,9 +32,9 @@
 }
 .language {
     position: fixed;
-    top: 50vh;
-    left: 96vw;
-    z-index: 98;
+    top: 25px;
+    right: 20px;
+    z-index: 101;
 }
 .language:hover{
     cursor: pointer;
