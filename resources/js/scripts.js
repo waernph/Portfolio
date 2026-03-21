@@ -233,34 +233,34 @@ for (let i = 0; i < navbarLinkModal.length; i++) {
     const element = navbarLinkModal[i];
     element.addEventListener("click", closeMenu);
 }
-const form = document.querySelector(".form-content");
-const sendButton = document.querySelector("#send-message");
-form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // stoppar redirect
+// const form = document.querySelector(".form-content");
+// const sendButton = document.querySelector("#send-message");
+// form.addEventListener("submit", async (e) => {
+//     e.preventDefault(); // stoppar redirect
 
-    const data = new FormData(form);
+//     const data = new FormData(form);
 
-    try {
-        const response = await fetch("https://formspree.io/f/meelypzz", {
-            method: "POST",
-            body: data,
-            headers: {
-                "Accept": "application/json"
-            }
-        });
+//     try {
+//         const response = await fetch("https://formspree.io/f/meelypzz", {
+//             method: "POST",
+//             body: data,
+//             headers: {
+//                 "Accept": "application/json"
+//             }
+//         });
 
-        if (response.ok) {
-            sendButton.style.backgroundColor = "var(--highlight)"
-            sendButton.innerText = "Thanks!";
-            form.reset();
-        } else {
-            sendButton.style.backgroundColor = "#DB1A1A";
+//         if (response.ok) {
+//             sendButton.style.backgroundColor = "var(--highlight)"
+//             sendButton.innerText = "Thanks!";
+//             form.reset();
+//         } else {
+//             sendButton.style.backgroundColor = "#DB1A1A";
             
-        }
-    } catch (error) {
-        sendButton.innerText = "Something went wrong.";
-    }
-});
+//         }
+//     } catch (error) {
+//         sendButton.innerText = "Something went wrong.";
+//     }
+// });
 
 // const sendButton = document.querySelector("#send-message");
 // sendButton.addEventListener("click", function () {
