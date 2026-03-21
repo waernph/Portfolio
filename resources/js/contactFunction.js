@@ -1,5 +1,7 @@
 const form = document.querySelector(".form-content");
 const sendButton = document.querySelector("#send-button");
+ 
+
 form.addEventListener("submit", async (e) => {
     e.preventDefault(); // stoppar redirect
 
@@ -19,10 +21,11 @@ form.addEventListener("submit", async (e) => {
             sendButton.innerText = "Thanks!";
             form.reset();
         } else {
-            sendButton.style.backgroundColor = "#DB1A1A";
-            
+            sendButton.style.backgroundColor = "#d83737";
+            sendButton.innerText = "Something went wrong";
+            form.reset();
         }
     } catch (error) {
-        sendButton.innerText = "Something went wrong.";
+        sendButton.innerText = "Something went wrong";
     }
 });
