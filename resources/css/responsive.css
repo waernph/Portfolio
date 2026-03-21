@@ -705,9 +705,10 @@
 
     /* REFERENCES */
     .references {
-        height: 30vh;
+        height: 50vh;
         margin-top: 0px;
         justify-content: space-between;
+        
     }
 
     .reference-div {
