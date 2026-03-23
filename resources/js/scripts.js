@@ -169,19 +169,9 @@ const refCompany = document.querySelector("#reference-company");
 let refIndex = 1;
 const refDict = [
     {
-        "name": "Håkan Larsson",
-        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
-        "company": "Maverick"
-    },
-    {
         "name": "Jakob Rockmyr",
-        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam?",
+        "text": "Philip är en otroligt uppskattad kollega som lyfter hela teamet. Han kombinerar stark teknisk kompetens med ett kreativt tänk som märks i allt han gör.",
         "company": "BST"
-    },
-    {
-        "name": "Jenny Spetz",
-        "text": "Lorem ipsum. Fugiat ducimus qui quaerat ulla veniam laboriosam? dolor sit amet consectetur adipisicing",
-        "company": "Liseberg"
     },
 ]
 refText.innerText = refDict[0].text;
