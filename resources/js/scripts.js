@@ -106,7 +106,7 @@ function lightMode() {
     document.querySelector("#css-case-logo").src = "resources/media/logos/CSS3_logo_and_wordmark.svg";
     document.querySelector("#js-case-logo").src = "resources/media/logos/Javascript-shield_black.svg";
 
-    document.querySelector("#send-message").style.color = "#FCF8EC";
+    document.querySelector("#send-button").style.color = "#FCF8EC";
     document.querySelector(".modal-h3").style.color = "#FCF8EC";
     document.querySelector(".close-modal-button").style.color = "#FCF8EC"
 }
@@ -129,7 +129,7 @@ function darkMode() {
     document.querySelector("#css-case-logo").src = "resources/media/logos/CSS3_logo_and_wordmark_white.svg";
     document.querySelector("#js-case-logo").src = "resources/media/logos/Javascript-shield.svg";
 
-    document.querySelector("#send-message").style.color = "var(--bg-color)";
+    document.querySelector("#send-button").style.color = "var(--bg-color)";
     document.querySelector(".modal-h3").style.color = "var(--light-color)";
     document.querySelector(".close-modal-button").style.color = "var(--light-color)";
 }
