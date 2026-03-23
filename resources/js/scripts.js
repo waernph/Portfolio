@@ -171,7 +171,7 @@ const refDict = [
     {
         "name": "Jakob Rockmyr",
         "text": "Philip är en otroligt uppskattad kollega som lyfter hela teamet. Han kombinerar stark teknisk kompetens med ett kreativt tänk som märks i allt han gör.",
-        "company": "BST"
+        "company": "Owner, BST"
     },
 ]
 refText.innerText = refDict[0].text;
