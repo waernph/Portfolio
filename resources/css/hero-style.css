@@ -13,8 +13,10 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90dvh;
+    min-height: 90vh;
+    min-height: 90dvh;
     position: relative;
+    /* overflow: hidden; */
 }
 
 .tag-line {
@@ -44,8 +46,8 @@ h1{
     left: -100px;
     background-color: var(--hero-color-one);
     position: absolute;
-    height: 30%;
-    width: 30%;
+    height: min(30vh, 400px);
+    width: min(30vw, 400px);
     border-radius: 50%;
     filter: blur(130px);
     animation: gradient-left infinite 5s;
@@ -57,8 +59,8 @@ h1{
     right: 0px;
     background-color: var(--hero-color-two);
     position: absolute;
-    height: 50%;
-    width: 30%;
+    height: min(50vh, 500px);
+    width: min(40vw, 400px);
     border-radius: 50%;
     filter: blur(130px);
     animation: gradient-right infinite 15s;
@@ -108,8 +110,8 @@ h1{
     z-index: 50;
 }
 .hero-logo {
-    height: 35vh;
-    max-height: 250px;
+    width: min(35vh, 250px);
+    height: auto;
     animation: logo-appear 3s;
 }
 

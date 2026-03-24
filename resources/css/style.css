@@ -36,6 +36,8 @@
 body {
     background-color: var(--bg-color);
     transition: all 1s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
