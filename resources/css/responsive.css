@@ -10,8 +10,7 @@
 
     /* LANGUAGE SELECTOR */
     .language {
-        top: 95px;
-        left: 90vw;
+        visibility: hidden;
     }
 
     /* LANGUAGE SELECTOR */
@@ -212,8 +211,7 @@
 
     /* LANGUAGE SELECTOR */
     .language {
-        top: 90px;
-        left: 90vw;
+        visibility: hidden;
     }
 
     /* LANGUAGE SELECTOR */
@@ -476,8 +474,7 @@
 
     /* LANGUAGE SELECTOR */
     .language {
-        top: 85px;
-        left: 92vw;
+        visibility: hidden;
     }
 
     .flag {

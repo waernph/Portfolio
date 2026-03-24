@@ -223,44 +223,8 @@ for (let i = 0; i < navbarLinkModal.length; i++) {
     const element = navbarLinkModal[i];
     element.addEventListener("click", closeMenu);
 }
-// const form = document.querySelector(".form-content");
-// const sendButton = document.querySelector("#send-message");
-// form.addEventListener("submit", async (e) => {
-//     e.preventDefault(); // stoppar redirect
 
-//     const data = new FormData(form);
-
-//     try {
-//         const response = await fetch("https://formspree.io/f/meelypzz", {
-//             method: "POST",
-//             body: data,
-//             headers: {
-//                 "Accept": "application/json"
-//             }
-//         });
-
-//         if (response.ok) {
-//             sendButton.style.backgroundColor = "var(--highlight)"
-//             sendButton.innerText = "Thanks!";
-//             form.reset();
-//         } else {
-//             sendButton.style.backgroundColor = "#DB1A1A";
-            
-//         }
-//     } catch (error) {
-//         sendButton.innerText = "Something went wrong.";
-//     }
-// });
-
-// const sendButton = document.querySelector("#send-message");
-// sendButton.addEventListener("click", function () {
-//     sendButton.style.backgroundColor = "var(--highlight)"
-//     sendButton.innerText = "Email sent!";
-// })
-
-
-const flag = document.querySelector("#language");
-
+const flag = document.querySelector(".flag");
 const modalHeader = document.querySelector("#modal-header");
 const sendBtn = document.querySelector("#send-button");
 const nameField = document.querySelector("#name");
@@ -316,8 +280,10 @@ let isEnglish = true;
 
 translation();
 
-const languageBtn = document.querySelector("#language");
-languageBtn.addEventListener("pointerdown", () => {
+document.querySelector("#language").addEventListener("pointerdown", changeLanguage);
+document.querySelector("#language-mobile").addEventListener("pointerdown", changeLanguage);
+
+function changeLanguage() {
     if (isEnglish) {
         isEnglish = false;
         translation();
@@ -326,4 +292,4 @@ languageBtn.addEventListener("pointerdown", () => {
         isEnglish = true;
         translation();
     }
-});
+}
