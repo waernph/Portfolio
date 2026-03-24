@@ -153,9 +153,7 @@
 
     .references {
         margin-top: 0px;
-        height: 45vh;
-        margin-bottom: 5vh;
-
+        height: 50vh;
     }
 
     .references-person h3 {
@@ -422,7 +420,7 @@
     }
 
     .reference-text {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
