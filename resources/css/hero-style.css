@@ -13,7 +13,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 90dvh;
     position: relative;
 }
 
@@ -108,7 +108,7 @@ h1{
     z-index: 50;
 }
 .hero-logo {
-    height: 35vh;
+    height: 35dvh;
     animation: logo-appear 3s;
 }
 
