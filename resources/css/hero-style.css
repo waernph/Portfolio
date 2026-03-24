@@ -108,7 +108,8 @@ h1{
     z-index: 50;
 }
 .hero-logo {
-    height: 35dvh;
+    height: 35vh;
+    max-height: 250px;
     animation: logo-appear 3s;
 }
 
