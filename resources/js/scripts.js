@@ -27,31 +27,8 @@ function tagLine() {
     }, 4000);
 }
 tagLine();
-//Change tagline
-let weatherLanguage = "en"
-//Fetch weather data with input default set to Göteborg
-async function weather(cityId = 2711533) {
-    const apiKey = "69ec97f7b99ef917a294c46362d91722";
-    let endpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&lang=${weatherLanguage}&appid=${apiKey}`;
-    const response = await fetch(endpoint)
-    const result = await response.json();
 
-    const temperatureC = (Math.round(result.main.temp) + "°C");
-    const weather = result.weather[0].description;
-    document.querySelector("#temperature").innerText = temperatureC;
-    document.querySelector("#weather-condition").innerText = weather;
-}
-weather();
-//Fetch weather data with input default set to Göteborg
 
-//Get set value to weather() from list
-const cityList = document.querySelector("#city");
-
-function updateWeather() {
-    weather(cityList.value)
-}
-cityList.addEventListener("click", updateWeather);
-//Get set value to weather() from list
 
 let modalIsOpen = false;
 

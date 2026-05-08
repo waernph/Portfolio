@@ -33,8 +33,7 @@ function translation() {
         caseThree.innerText = "En uppgift att skapa API för ett forum, code first. Tekniker som använts är bland annat Entity Framework, Controllers, JWT for autharization and authentication, AutoMapper Swagger";
         caseFour.innerText = "Ett konsolspel utvecklat som en inlämninguppgift under kursen C# grund";
 
-        weatherLanguage = "se";
-        updateWeather();
+
         isEnglish = false;
     }
     else if (isEnglish) {
@@ -70,8 +69,8 @@ function translation() {
         caseThree.innerText = caseThreeOg;
         caseFour.innerText = caseFourOg;
 
-        weatherLanguage = "en";
-        updateWeather();
+
+
         isEnglish = true;
     }
 }
